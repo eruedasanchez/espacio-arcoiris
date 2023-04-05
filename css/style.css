@@ -1,0 +1,33 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  font-size: 16px; }
+  header div {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between; }
+  header nav {
+    background-color: grey; }
+
+.atencion {
+  display: flex;
+  flex-direction: column; }
+
+.registros div:nth-child(1) {
+  background-color: red;
+  color: green; }
+
+.navbar {
+  display: flex; }
+  .navbar li {
+    list-style: none; }
+    .navbar li a {
+      text-decoration: none;
+      color: white; }
+      .navbar li a:hover {
+        /* & es un puntero al ultimo elemento que se declaro en el nesting. En este caso a la etiqueta a */
+        color: pink; }

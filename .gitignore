@@ -11,3 +11,7 @@ css/*.map
 css/*.css
 !bootstrap.min.css
 !style.css
+
+# ignore node's files 
+node_modules/
+package-lock.json/
