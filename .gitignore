@@ -1,0 +1,13 @@
+# ignore all files .map in js folder but not their subdirectories
+js/*.map
+
+# iignore all files .js in js folder but not their subdirectories
+js/*.js
+
+# except bootstrap.min.js 
+!bootstrap.min.js
+
+css/*.map
+css/*.css
+!bootstrap.min.css
+!style.css
