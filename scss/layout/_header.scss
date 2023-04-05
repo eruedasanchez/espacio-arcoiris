@@ -1,9 +1,8 @@
 header{
     font-size: 16px;
     div{
-        background-color: blue;
-        display: flex;
-        justify-content: space-between;
+        background-color: $background-principal;
+        @include flex;
         
     }
     nav{

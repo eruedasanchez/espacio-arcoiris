@@ -1,0 +1,19 @@
+.section-uno{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    background-color: blue;
+}
+
+article{
+    font-size: 30px;
+    align-items: center;
+    @extend .section-uno; /* permite que extend tome las propiedades de section-uno tambien */
+
+}
+
+div{
+    @extend article;
+    padding: 5px;    /* pisa el padding de 10px de section-uno porque se trabaja en cascada */
+}
