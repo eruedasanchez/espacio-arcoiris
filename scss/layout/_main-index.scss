@@ -14,6 +14,6 @@ article{
 }
 
 div{
-    @extend article;
-    padding: 5px;    /* pisa el padding de 10px de section-uno porque se trabaja en cascada */
+   padding: 5px;    /* pisa el padding de 10px de section-uno porque se trabaja en cascada */
+   @include grid(repeat(3,1fr),repeat(2,20px),10px,"header header header""footer footer footer",center,end);
 }

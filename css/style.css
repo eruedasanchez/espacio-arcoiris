@@ -10,8 +10,8 @@ header {
     background-color: purple;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    align-items: flex-end;
+    gap: 10px;
     flex-direction: row; }
   header nav {
     background-color: grey; }
@@ -35,22 +35,34 @@ header {
         /* & es un puntero al ultimo elemento que se declaro en el nesting. En este caso a la etiqueta a */
         color: pink; }
 
-.section-uno, article, div {
+.section-uno, article {
   display: flex;
   justify-content: center;
   padding: 10px;
   font-size: 30px;
   background-color: blue; }
 
-article, div {
+article {
   font-size: 30px;
   align-items: center;
   /* permite que extend tome las propiedades de section-uno tambien */ }
 
 div {
   padding: 5px;
-  /* pisa el padding de 10px de section-uno porque se trabaja en cascada */ }
+  /* pisa el padding de 10px de section-uno porque se trabaja en cascada */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 20px);
+  gap: 10px;
+  grid-template-areas: "header header header" "footer footer footer";
+  justify-content: center;
+  align-content: end; }
 
 footer {
   background-color: purple;
-  color: white; }
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row; }

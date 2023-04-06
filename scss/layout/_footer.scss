@@ -1,4 +1,5 @@
 footer{
     background-color: $background-principal;
     color: white;
+    @include flex(center,center,5px,row);
 }
