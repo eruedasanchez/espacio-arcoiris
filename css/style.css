@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Urbanist', sans-serif; 
+    overflow-x: hidden; 
+}
+
+header{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+}
+
+nav{
+    background-color: #FCEFE4; 
+}
+
+svg{
+    color: black;
+}
+
+
+.nav-link:hover, .dropdown-item:hover{
+    color: goldenrod !important;
+}
+
