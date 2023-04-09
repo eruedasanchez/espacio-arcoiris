@@ -54,3 +54,64 @@ main{
     border-radius: 100%;
 }
 
+/**** quienes somos ****/ 
+
+.container-main-title{
+    margin-top: 6rem;
+    display: grid;
+    /* justify-content: center; */
+    grid-template-rows: 4rem 6rem 4rem 5rem 4rem 6rem; 
+    grid-template-columns: repeat(2,36rem);
+    grid-template-areas: 
+    "image fst-title"
+    "image fst-subtitle"
+    "image snd-title"
+    "image snd-subtitle"
+    "image thr-title"
+    "image thr-subtitle";
+}
+
+.fst-title{
+    grid-area: fst-title;                                
+}
+
+.fst-subtitle{
+    grid-area: fst-subtitle;                                         
+}
+
+.snd-title{
+    grid-area: snd-title;                                
+}
+
+.snd-subtitle{
+    grid-area: snd-subtitle;                                         
+}
+
+.thr-title{
+    grid-area: thr-title;                                
+}
+
+.thr-subtitle{
+    grid-area: thr-subtitle;                                         
+}
+
+.fst-title h2, .snd-title h2, .thr-title h2{
+    color: goldenrod;
+    font-size: 2.2rem;
+}
+
+.fst-subtitle h3, .snd-subtitle h3, .thr-subtitle h3{
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+}
+
+.main-image{
+    grid-area: image;  
+}
+
+.main-image img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 100%;
+}
+
