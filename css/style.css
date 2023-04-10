@@ -48,6 +48,12 @@ main{
     color:  goldenrod;
 }
 
+.carousel-titulo-color{
+    color:  goldenrod;
+    font-weight: lighter;
+
+}
+
 .carousel .carousel-indicators button{
     width: 10px;
     height: 10px;
@@ -150,6 +156,72 @@ main{
     height: 1.5rem;
 }
 
+
+
+
+
+
+.container-exclusive{
+    height: 35rem;                              
+    background-image: url("../assets/img/index/main/exclusive-1.jpg");
+    background-position: center; 
+    background-size: cover;                              
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(4,28rem);
+    grid-template-rows: 29rem;
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+    margin-right: 4rem; 
+    object-fit: cover; 
+    filter: brightness(0.6);
+}
+
+
+/*
+
+.online{
+    width: 100%;
+    height: 29rem;
+    background-image: url("../assets/img/index/body/subtitulo/online.jpg");
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 2;                                   
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 577px){
     .cards-wrapper{
     display: flex;
@@ -167,12 +239,31 @@ main{
         justify-content: center; */
         }
 }
-    
 
 .image-wrapper img{
     max-width: 100%;
     max-height: 100%;
 }
+
+.card-text-position{
+    text-align: center;
+} 
+
+.color-card{
+    color: goldenrod; 
+}
+
+.carousel-titulo, .button-tienda-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 576px){
     .card:not(:first-child){
