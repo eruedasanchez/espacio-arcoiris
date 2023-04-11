@@ -157,66 +157,34 @@ main{
     height: 1.5rem;
 }
 
+/******* Contenido exclusivo, linea de harinas *******/
 
-
-
-
-
-.container-exclusive{
-    height: 34rem;                              
-    background-image: url("../assets/img/index/main/exclusive-1.jpg");
+.exclusive{
+    width: 100vw;
+    height: 34rem;
+    display: flex;
+    align-items: center; 
+    background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .3)), url("../assets/img/index/main/exclusive-1.jpg"); /* efecto texto superpuesto */
     background-position: center; 
     background-size: cover;                              
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 60rem;
-    grid-template-rows: 3rem repeat(3,4rem) 6rem;
-    padding-left: 3.5rem;
-    padding-right: 4rem;
-    object-fit: cover; 
-    filter: brightness(0.5);
-    align-content: center; 
-    margin-top: 4rem;
 }
 
-.exclusive-presented{
-    color: gold;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    order: 1;  
-}
-
-.exclusive-first-class{
+.exclusive-text h5{
     color: goldenrod;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    order: 2;  
-    font-size: 1.6rem;                                 
 }
 
-.exclusive-secret{
+.exclusive-text h3, .exclusive-text h6{
     color: white;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    order: 3;
-    font-size: 2.2rem;
 }
 
-.exclusive-refined{
-    color: white;
-    font-size: 1.6rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    order: 4;                                   
+.exclusive-text h4{
+    color: gold;
 }
+
+
+
+
 
 /****************************** footer ******************************/
 
@@ -257,12 +225,12 @@ footer{
     height: 12rem;                             
     display: grid;
     grid-template-columns: repeat(4, 20rem);
-    grid-template-rows: 5rem repeat(3, 3rem);
+    grid-template-rows: 5rem repeat(3, 2rem);
     justify-content: center;
 }
 
 .footer-taller{
-    height: 17rem; 
+    height: 10rem; 
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -280,7 +248,7 @@ footer{
 }
 
 .footer-sale{
-    height: 17rem;
+    height: 10rem;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -308,11 +276,12 @@ footer{
 }
 
 .footer-sale-contact a span{
-    vertical-align: 10%;
+    color: black;
+    /* vertical-align: 30%; */
 }
 
 .footer-information{
-    height: 17rem;
+    height: 10rem;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -330,7 +299,7 @@ footer{
 }
 
 .footer-social-networks{
-    height: 17rem;
+    height: 10rem;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -341,7 +310,6 @@ footer{
 .footer-social-networks h2{
     font-size: 1.8rem; 
     color: goldenrod;
-    text-align: center;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -350,8 +318,8 @@ footer{
 
 .footer-redes{
     display: flex;
-    justify-content: center;
-    gap: 1.2rem;
+    /* justify-content: center; */
+    gap: 1rem;
 }
 
 .footer-redes li{
