@@ -181,13 +181,12 @@ main{
     max-height: 100%;
 }
 
+
 .button-tienda-position{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
-
 
 /******* contenido exclusivo (linea de harinas) *******/
 
@@ -365,6 +364,101 @@ footer{
     text-align: center;
 }
 
+/****************************** taller.html ******************************/
+
+.container-taller-title{
+    height: 5.5rem;
+}
+
+.container-taller-title h1{
+    font-size: 2.5rem;
+}
+
+.container-dir{
+    height: 12.5rem;
+    padding-left: 8rem;
+}
+
+.container-dir h2{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+}
+
+.container-dir h3{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+.container-maps{
+    background-color: #FCEFE4;
+    height: 37rem;
+    display: grid;
+    grid-template-columns: repeat(2, 34.5rem);
+    grid-template-rows: repeat(5,5rem);
+    /* grid-template: repeat(6,100px) / repeat(3,450px); */  /* rows / columns */
+    grid-template-areas: 
+    "map    location"
+    "map    location"
+    "map    location"
+    "map    location"
+    "map    location";
+    padding-left: 8rem;
+    padding-top: 2rem;
+}
+
+.map{
+    grid-area: map;                                
+}
+
+.location{
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 34.5rem;
+    grid-template-rows: repeat(5,3.5rem);
+    grid-template-areas: 
+    "gmaps"
+    "h3"
+    "h4"
+    "h5"
+    "whatsapp";
+}
+
+.gmaps{
+    grid-area: gmaps;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+.location h3{
+    grid-area: h3;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+.location h4{
+    grid-area: h4;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+.location h5{
+    grid-area: h5;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+.whatsapp-ventas{
+    grid-area: whatsapp;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
 
 
 
@@ -393,6 +487,10 @@ footer{
 
 
 
+
+
+
+/****** media del carousel con cards *****/
 
 
 
