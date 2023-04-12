@@ -49,7 +49,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
                                 </svg>
-                                <small class="none ms-2">Login</small>
+                                <small class="ms-2">Login</small>
                             </li>
                             <li class="nav-item col-6 col-md-auto p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
@@ -86,8 +86,8 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner container pt-2">
                     <div class="carousel-item active d-item" data-bs-interval="2000">
@@ -135,7 +135,7 @@
             </div>
 
             <!--Titulo principal con imagen con borde redondo-->
-            <div class="container container-main-title">
+            <div class="container container-main-subtitle">
                 <!--Contenedor del titulo principal, subtitulo y la imagen del taller-->
                 <div class="fst-title">
                     <!--Titulo principal-->
@@ -185,143 +185,120 @@
 
             <!--Container carousel con cards-->
             <div class="pt-5">
-                <div class="carousel-titulo">
-                    <h3 class="carousel-titulo-color">Nuestros cursos mas elegidos</h3>
+                <div class="carousel-cards-title">
+                    <h3>Nuestros cursos mas elegidos</h3>
                 </div>
                 
                 <!-- Carousel con cards -->
-                <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
-                    <div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">  
+                    
+                    <button class="carousel-control-prev ms-5" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next me-5" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
 
                     <div class="carousel-inner container pt-2">
-                        
-                        <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="carousel-item active"> <!-- data-bs-interval="3000" -->
                             <div class="cards-wrapper">
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/donuts.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/donuts.jpg"  alt="..."></div>
                                     <div class="card-body">
-                                        <div class="card-body">
-                                            <p class="card-text card-text-position color-card">Seminario regular presencial</p>
-                                            <h5 class="card-title fs-4 card-text-position">Donuts</h5>
-                                            <p class="card-text text-black card-text-position">$14000</p>
-                                            <button class="btn btn-outline-warning px-4 py-2 mt-1">Añadir al carrito</button>
-                                        </div>
+                                        <p class="card-text color-card">Seminario regular presencial</p>
+                                        <h5 class="card-title fs-4 card-text-position">Donuts</h5>
+                                        <p class="card-text text-black card-text-position">$14000</p>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-4">Añadir al carrito</button>
                                     </div>
                                 </div>
 
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/macarons.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/macarons.jpg"  alt="..."></div>
                                     <div class="card-body">
-                                        <p class="card-text card-text-position color-card">Curso intensivo online</p>
+                                        <p class="card-text color-card">Curso intensivo online</p>
                                         <h5 class="card-title fs-4 card-text-position">Macarons</h5>
                                         <p class="card-text text-black card-text-position">$18000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-1">Añadir al carrito</button>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-3">Añadir al carrito</button>
                                     </div>
                                 </div>
 
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/mini-donas.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/mini-donas.jpg"  alt="..."></div>
                                     <div class="card-body">
-                                        <p class="card-text card-text-position color-card">Curso regular presencial</p>
-                                        <h5 class="card-title fs-4 card-text-position">Cake Designer</h5>
-                                        <p class="card-text text-black card-text-position">$40000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-1">Añadir al carrito</button>
+                                        <p class="card-text color-card">Curso regular presencial</p>
+                                        <h5 class="card-title card-text-position fs-4">Cake Designer</h5>
+                                        <p class="card-text card-text-position text-black">$40000</p>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-3">Añadir al carrito</button>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         
-                        <div class="carousel-item" data-bs-interval="3000">
+                        <div class="carousel-item"> <!-- data-bs-interval="3000" -->
                             <div class="cards-wrapper">
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/rainbow-cake.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/rainbow-cake.jpg"  alt="..."></div>
                                     <div class="card-body">
-                                        <p class="card-text card-text-position color-card">Seminario intensivo presencial</p>
+                                        <p class="card-text color-card">Seminario intensivo presencial</p>
                                         <h5 class="card-title fs-4 card-text-position">Rainbow Cake</h5>
                                         <p class="card-text text-black card-text-position">$12000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-1">Añadir al carrito</button>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-3">Añadir al carrito</button>
                                     </div>
                                 </div>
                                 
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/red-velvet.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/red-velvet.jpg"  alt="..."></div>
                                     <div class="card-body">
-                                        <p class="card-text card-text-position color-card">Seminario intensivo online</p>
+                                        <p class="card-text color-card">Seminario intensivo online</p>
                                         <h5 class="card-title fs-4 card-text-position">Red Velvet</h5>
                                         <p class="card-text text-black card-text-position">$9000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-1">Añadir al carrito</button>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-2">Añadir al carrito</button>
                                     </div>
                                 </div>
 
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/mini-cakes.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/mini-cakes.jpg"  alt="..."></div>
                                     <div>
-                                        <p class="card-text card-text-position color-card">Curso intensivo presencial</p>
+                                        <p class="card-text color-card">Curso intensivo presencial</p>
                                         <h5 class="card-title fs-4 card-text-position">Mini cakes</h5>
                                         <p class="card-text text-black card-text-position">$15000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-1">Añadir al carrito</button>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-3">Añadir al carrito</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="carousel-item" data-bs-interval="3000">
+                        <div class="carousel-item"> <!-- data-bs-interval="3000" -->
                             <div class="cards-wrapper">
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/cupcakes.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/cupcakes.jpg"  alt="..."></div>
                                     <div class="card-body">
                                         <p class="card-text card-text-position color-card">Curso regular presencial</p>
                                         <h5 class="card-title fs-4 card-text-position">Cupcakes</h5>
                                         <p class="card-text text-black card-text-position">$8000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-3">Añadir al carrito</button>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-1">Añadir al carrito</button>
                                     </div>
                                 </div>
                                 
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/mini-donas.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/mini-donas.jpg"  alt="..."></div>
                                     <div class="card-body">
                                         <p class="card-text card-text-position color-card">Seminario intensivo online</p>
                                         <h5 class="card-title fs-4 card-text-position">Mini Donuts</h5>
                                         <p class="card-text text-black card-text-position">$6000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-3">Añadir al carrito</button>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-2">Añadir al carrito</button>
                                     </div>
                                 </div>
 
                                 <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/img/index/main/macaron.jpg"  alt="...">
-                                    </div>
+                                    <div class="image-wrapper"><img src="./assets/img/index/main/macaron.jpg"  alt="..."></div>
                                     <div class="card-body">
                                         <p class="card-text card-text-position color-card">Curso regular presencial</p>
                                         <h5 class="card-title fs-4 card-text-position">Macarons</h5>
                                         <p class="card-text text-black card-text-position">$20000</p>
-                                        <button class="btn btn-outline-warning px-4 py-2 mt-3">Añadir al carrito</button>
+                                        <button class="btn btn-outline-warning px-4 py-2 ms-2">Añadir al carrito</button>
                                     </div>
                                 </div>
                             </div>
@@ -462,7 +439,7 @@
             </div>
             
             <!--Contenido exclusivo, linea de harinas-->
-            <div class="container exclusive">
+            <div class="container exclusive mt-5">
                 <div class="exclusive-text">
                     <h4>PRESENTANDO NUESTRA</h4>
                     <h5>Exclusiva linea de harinas First Class</h5>
@@ -526,10 +503,6 @@
                 <h6>Copyright © 2023 | Espacio Arcoiris Crear LLC</h6>
             </div>
         </footer>
-
-
-
-        
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

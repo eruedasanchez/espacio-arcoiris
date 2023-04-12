@@ -5,10 +5,12 @@ body{
     overflow-x: hidden; 
 }
 
+/****************************** header ******************************/
+
 header{
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
-    position: sticky;                                /* Barra de navegacion acompaña en toda la pagina */
-    top: 0;                                          /* Sin esta propiedad, tampoco funciona navbar sticky */
+    position: sticky;                                   /* Barra de navegacion (acompaña en toda la pagina) */
+    top: 0;                                          
     z-index: 2;
 }
 
@@ -20,10 +22,11 @@ svg{
     color: black;
 }
 
-
 .nav-link:hover, .dropdown-item:hover{
-    color: goldenrod !important;
+    color: goldenrod !important;                     /* Al posicionarse encima de un link, cambia el color de la fuente a dorado */
 }
+
+/****************************** index.html ******************************/
 
 /*********** main ***********/
 
@@ -31,8 +34,16 @@ main{
     font-family: 'Urbanist', sans-serif;
 }
 
+/*********** carousel principal ***********/
+
+.carousel .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;                               /* Cambio linea horizontal de boton por circulo */
+}
+
 .d-item{
-    height: 490px;
+    height: 490px;                                     /* Largo del contenedor de las imagenes del carousel principal */
 }
 
 .d-img{
@@ -49,21 +60,9 @@ main{
     color:  goldenrod;
 }
 
-.carousel-titulo-color{
-    color:  goldenrod;
-    font-weight: lighter;
+/**** subtitulo principal con imagen con borde redondo ****/ 
 
-}
-
-.carousel .carousel-indicators button{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-
-/**** quienes somos ****/ 
-
-.container-main-title{
+.container-main-subtitle{
     margin-top: 6rem;
     display: grid;
     justify-content: center;
@@ -123,6 +122,8 @@ main{
     border-left: 0.5rem;
 }
 
+/*********** sponsors ***********/
+
 .container-sponsors {
     list-style: none;
     display: flex;
@@ -132,24 +133,21 @@ main{
     margin-top: 4.5rem; 
 }
 
-/*** carrousel con cards ***/
-.card{
-    border: none;
-    border-radius: 0;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-}
+/*********** carrousel con cards ***********/
 
-.carousel-inner{
-    padding: 1em;
+.carousel-cards-title h3{
+    color:  goldenrod;
+    font-weight: lighter;
+    text-align: center;
 }
 
 .carousel-control-prev, .carousel-control-next{
-    background-color: #e1e1e1;
+    background-color: goldenrod;
     width: 6vh;
     height: 6vh;
-    border-radius: 50%;
+    border-radius: 80%;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 
 .carousel-control-prev span, .carousel-control-next span {
@@ -157,7 +155,41 @@ main{
     height: 1.5rem;
 }
 
-/******* Contenido exclusivo, linea de harinas *******/
+.card{
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-card{
+    color: goldenrod; 
+}
+
+.card-text-position{
+    text-align: center;
+}
+
+.carousel-inner{
+    padding: 1em;
+}
+
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button-tienda-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+/******* contenido exclusivo (linea de harinas) *******/
 
 .exclusive{
     width: 100vw;
@@ -181,10 +213,6 @@ main{
 .exclusive-text h4{
     color: gold;
 }
-
-
-
-
 
 /****************************** footer ******************************/
 
@@ -277,7 +305,6 @@ footer{
 
 .footer-sale-contact a span{
     color: black;
-    /* vertical-align: 30%; */
 }
 
 .footer-information{
@@ -318,7 +345,6 @@ footer{
 
 .footer-redes{
     display: flex;
-    /* justify-content: center; */
     gap: 1rem;
 }
 
@@ -387,31 +413,6 @@ footer{
         justify-content: center; */
         }
 }
-
-.image-wrapper img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.card-text-position{
-    text-align: center;
-} 
-
-.color-card{
-    color: goldenrod; 
-}
-
-.carousel-titulo, .button-tienda-position{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-
-
-
-
 
 @media screen and (max-width: 576px){
     .card:not(:first-child){
