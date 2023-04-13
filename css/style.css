@@ -295,15 +295,20 @@ footer{
 .footer-sale-contact{
     list-style: none;
     padding-left: 0.1rem;
-
 }
 
 .footer-sale-contact li a{
     text-decoration: none;
 }
 
+.footer-sale-contact li a img{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
 .footer-sale-contact a span{
     color: black;
+    vertical-align: -5%;
 }
 
 .footer-information{
@@ -371,95 +376,63 @@ footer{
 }
 
 .container-taller-title h1{
+    color: goldenrod;
     font-size: 2.5rem;
 }
 
 .container-dir{
-    height: 12.5rem;
-    padding-left: 8rem;
-}
-
-.container-dir h2{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.8rem;
+    height: 8rem;
 }
 
 .container-dir h3{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    color: goldenrod;
 }
 
 .container-maps{
-    background-color: #FCEFE4;
-    height: 37rem;
+    height: 26rem;
     display: grid;
-    grid-template-columns: repeat(2, 34.5rem);
-    grid-template-rows: repeat(5,5rem);
-    /* grid-template: repeat(6,100px) / repeat(3,450px); */  /* rows / columns */
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3,3rem) 12rem;
     grid-template-areas: 
-    "map    location"
     "map    location"
     "map    location"
     "map    location"
     "map    location";
-    padding-left: 8rem;
-    padding-top: 2rem;
 }
 
 .map{
+    height: 22rem;
     grid-area: map;                                
 }
 
 .location{
+    height: 20rem;
     grid-area: location;
-    display: grid;
-    grid-template-columns: 34.5rem;
-    grid-template-rows: repeat(5,3.5rem);
-    grid-template-areas: 
-    "gmaps"
-    "h3"
-    "h4"
-    "h5"
-    "whatsapp";
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
 }
 
-.gmaps{
-    grid-area: gmaps;
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-}
-
-.location h3{
-    grid-area: h3;                                
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-}
-
-.location h4{
-    grid-area: h4;                                
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-}
-
-.location h5{
-    grid-area: h5;                                
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+.location a{
+    color: goldenrod;
 }
 
 .whatsapp-ventas{
-    grid-area: whatsapp;
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem; 
+    text-decoration: none;
 }
 
+.whatsapp-ventas img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.whatsapp-ventas span{
+    color: goldenrod;
+    vertical-align: -8%;
+}
+
+/****************************** hasta aca realice cambios ******************************/
 
 
 
