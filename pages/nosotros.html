@@ -74,18 +74,104 @@
             </nav>
         </header>
 
-        <main>
-            <div class="container container-video">
-                <video src="../assets/video/nosotros-esp-arcoiris.mp4" autoplay muted></video>
+        <main class="container-fluid bg-body-tertiary">
+            <!--Titulo principal-->
+            <div class="container container-taller-title">
+                <h1 class="pt-4">Home > Nosotros</h1>
             </div>
-            
+
+            <div class="container container-video">
+                <!-- La idea en el video es reproducirlo en un loop infinito pero no se si todavia lo podemos hacer -->
+                <video src="../assets/video/nosotros-esp-arcoiris.mp4" autoplay muted loop="1"></video>
+            </div>
+
+            <div class="container container-espacio">
+                <img src="../assets/img/nosotros/nordic-interior.jpg" alt="interior de un espacio nordico">
+                <h3>El espacio</h3>
+                <h5>Espacio Arcoiris Crear es una mini empresa familiar argentina con varios años en el mercado logrando trabajos increibles con nuestros alumnos y utilizando herramientas e insumos de primer nivel en todas las preparaciones.</h6>
+                <h6>Todos nuestros cursos son creados por nuestra prestigiosa chef – pastelera y CEO Lorem Ipsum, quien ha desarrollado este espacio como un emprendimiento hasta convertirse en unas de las instituciones con mas reconocimiento. <br> Actualmente estamos en Argentina desarrollando nuestras capacitaciones de pasteleria, cake designer y pasteleria de vanguardia.</h6>
+            </div>
+
+            <div class="container container-unique">
+                <div class="unique-title">
+                    <h2>Somos unicos</h2>
+                </div>
+                <div class="container-elements">
+                    <div class="element">
+                        <img src="../assets/img/nosotros/diamond.png" alt="icono de diamante">
+                        <h4>Ingredientes de alta calidad</h4>
+                        <h6>Solo la mejor seleccion</h6>
+                    </div>
+                    <div class="element">
+                        <img src="../assets/img/nosotros/e-learning.png" alt="icono de e-learning">
+                        <h4>Variedad</h4>
+                        <h6>Ofrecemos capacitaciones <br> presenciales y online</h6>
+                    </div>
+                    <div class="element">
+                        <img src="../assets/img/nosotros/handshake.png" alt="icono de choque de mano">
+                        <h4>Enfocados en el cliente</h4>
+                        <h6>Herramientas e insumos con la mejor <br> financiacion para cada cliente</h6>
+                    </div>
+                    <div class="element">
+                        <img src="../assets/img/nosotros/graduate.png" alt="icono de alumno graduado">
+                        <h4>Enfocados en el alumno</h4>
+                        <h6>Soluciones personalizadas <br> para cada alumno</h6>
+                    </div>
+                </div>
+            </div>
         </main>
 
-        <footer>
-
+        <footer class="pt-2">
+            <div class="mt-5 container-newsletter">
+                <!-- Newsletter -->
+                    <p>Recibí todas las novedades en tu correo electronico</p>
+                    <h2>Suscribite a nuestro newsletter!</h2>
+                    <div class="form">
+                        <form class="row" action="#">
+                            <input class="text-start border-dark" placeholder="Ingresa tu mail" type="mail">
+                            <button class="btn btn-outline-warning px-4 py-2 mt-1">Suscribite<i class="fas fa-long-arrow-alt-right"></i></button>
+                        </form>
+                    </div>
+            </div>
+            <div class="container-information">
+                <!--Taller, info, ventas y redes sociales-->
+                <div class="footer-taller">
+                    <!--Taller-->
+                    <h2>Taller</h2>
+                    <h6>Del Barco Centenera 38315, CABA</h6>
+                    <h6>Lunes a Viernes de 9:00 a 18:00hs</h6>
+                    <h6>Sabados de 9:00 a 15:00hs</h6>
+                </div>
+                <div class="footer-sale">
+                    <!--Ventas-->
+                    <h2>Ventas</h2>
+                    <ul class="footer-sale-contact">
+                        <li><a href=""><img src="../assets/img/index/footer/whatsapp.png" alt="icono whatsapp"> <span>Whatsapp ventas</span></a></li>
+                        <li><a href=""><img src="../assets/img/index/footer/phone.png" alt="icono telefono"> <span>Tel. Ventas: 11 2345 6789</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-information">
+                    <!--Informacion-->
+                    <h2>Informacion</h2>
+                    <h6>Medios de pago</h6>
+                    <h6>Unite a nuestro equipo</h6>
+                    <h6>Evita estafas</h6>
+                </div>
+                <div class="footer-social-networks">
+                    <!--Redes sociales-->
+                    <h2>Seguinos en:</h2>
+                    <ul class="footer-redes">
+                        <li><a href="https://www.facebook.com/esp.arcoiriscrear" target="blank"><img width="24" height="24" src="../assets/img/index/footer/facebook.png" alt="icono Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/esp.arcoiris/" target="blank"><img width="28" height="28" src="../assets/img/index/footer/instagram.png" alt="icono Instagram"></a></li>
+                        <li><a href="https://www.youtube.com/@espacioarcoiriscrear9317" target="blank"><img width="28" height="28" src="../assets/img/index/footer/youtube.png" alt="icono Youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright"> 
+                <!--Derechos reservados-->
+                <h6>Copyright © 2023 | Espacio Arcoiris Crear LLC</h6>
+            </div>
         </footer>
-        
-
         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
