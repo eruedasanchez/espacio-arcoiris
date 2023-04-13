@@ -432,8 +432,22 @@ footer{
     vertical-align: -8%;
 }
 
-/****************************** hasta aca realice cambios ******************************/
+/****************************** nosotros.html ******************************/
 
+.container-video{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 25rem;
+}
+
+.container-video video{
+    height: 22rem;
+}
+
+
+
+/* hasta aca realice cambios */
 
 
 
