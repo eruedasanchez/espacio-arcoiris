@@ -5,13 +5,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cursos</title>
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <div class="container-fluid">
+                    <!-- Logo de la empresa -->
+                    <a class="navbar-brand" href="../index.html"><img width="80" height="80" src="../assets/img/index/header/logo-esp-arcoiris-crear.png" alt="Dos manos sosteniendo un arcoiris"></a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Elementos del menu que va a colapsar -->
+                    <div class="collapse navbar-collapse" id="menuNavegacion">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link text-dark" href="../index.html">Inicio</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Academia</a>
+                                <ul class="dropdown-menu bg-light">
+                                    <li><a class="dropdown-item text-dark" href="./cursos.html">Cursos</a></li>
+                                    <li><a class="dropdown-item text-dark" href="./seminarios.html">Seminarios</a></li>
+                                    <li><a class="dropdown-item text-dark" href="./workshops.html">Workshops</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Tienda</a>
+                                <ul class="dropdown-menu bg-light">
+                                    <li><a class="dropdown-item text-dark" href="./capacitaciones-presenciales.html">Capacitaciones presenciales</a></li>
+                                    <li><a class="dropdown-item text-dark" href="./capacitaciones-online.html">Capacitaciones online</a></li>
+                                    <li><a class="dropdown-item text-dark" href="./herramientas.html">Herramientas</a></li>
+                                    <li><a class="dropdown-item text-dark" href="./insumos.html">Insumos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="./nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="./promociones.html">Promociones</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="./taller.html">Taller</a></li>
+                        </ul>
+                        <hr class="text-dark-90">
+    
+                        <!-- login, carrito, ayuda, taller -->
+                        <ul class="navbar-nav flex-row flex-wrap text-dark">
+                            <li class="nav-item col-6 col-md-auto p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                                </svg>
+                                <small class="ms-2">Login</small>
+                            </li>
+                            <li class="nav-item col-6 col-md-auto p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                <small class="ms-2">Carrito</small>
+                            </li>
+                            <li class="nav-item col-6 col-md-auto p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                                </svg>
+                                <small class="ms-2">Ayuda</small>
+                            </li>
+                        </ul>
+    
+                        <!--boton informacion-->
+                        <form class="d-flex"></form>
+                        <button class="btn btn-outline-warning d-none d-md-inline-block">Informacion</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
         <h1>SOY seminarios. COMPLETAME</h1>
         
 
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
