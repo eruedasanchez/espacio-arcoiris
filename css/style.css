@@ -524,6 +524,60 @@ footer{
 
 /****************************** promociones.html ******************************/
 
+.container-cards{
+    margin-top: 1.5rem;
+    height: 60rem;
+}
+
+.container-three-cards{
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3rem;
+}
+
+.card{
+    background-color: #FCEFE4;
+    height: 26rem;
+    border-radius: 0.9rem;
+    box-shadow: 0 0.02rem 0.02rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 2rem;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+    width: 9rem;
+    height: 14rem;
+    border-radius: 0.95rem;
+}
+
+.card h4{
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+
+.card p{
+    padding: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card p span{
+    color: red;
+    font-size: 1.3rem;
+    padding-left: 0.4rem;
+    text-decoration:line-through;
+}
+
 /* hasta aca realice cambios */
 
 
