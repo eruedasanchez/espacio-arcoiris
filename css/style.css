@@ -926,6 +926,39 @@ footer{
         grid-row-start: 5;
         grid-row-end: 6;
     }
+
+    /****************************** nosotros.html ******************************/
+
+    .container-espacio{
+        height: 38rem;
+        display: grid;
+        grid-template-columns: 24rem 21rem;
+        grid-template-rows: 5rem 11rem 15rem;
+    }
+
+    .container-espacio img{
+        width: 20rem;
+        height: 24rem;
+        padding-left: 1rem;
+        padding-top: 3rem;
+        align-self: center;
+    }
+
+    .unique-title h2{
+        padding-right: 0.01rem;
+    }
+
+    .element-quality{
+        margin-bottom: 5rem;
+    }
+
+    .element-variedad{
+        margin-bottom: 6rem;
+    }
+
+    .element-client{
+        margin-bottom: 3.5rem;
+    }
 }
 
 @media(max-width:767px){
