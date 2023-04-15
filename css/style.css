@@ -737,6 +737,50 @@ footer{
         color: white;
         text-align: center;
     }
+
+    /****************************** nosotros.html ******************************/
+
+    .container-espacio{
+        height: 38rem;
+        display: grid;
+        grid-template-columns: 32rem 27rem;
+        grid-template-rows: 5rem 9rem 12rem;
+    }
+
+    .container-espacio img{
+        width: 24rem;
+        height: 30rem;
+        padding-left: 1rem;
+    }
+
+    .container-espacio h5, .container-espacio h6{
+        text-align: left;
+    }
+
+    .container-unique{
+        height: 20rem;
+    }
+
+    .container-elements{
+        padding-top: 1rem;
+        gap: 4rem;
+    }
+
+    .element h4, .element h6{
+        text-align: center;
+    }
+
+    .element-quality, .element-student{
+        margin-bottom: 3.2rem;
+    }
+
+    .element-variedad{
+        margin-bottom: 1.6rem;
+    }
+
+    .element-student{
+        margin-bottom: 2.7rem;
+    }
 }
 
 /* 1rem = 16px */
