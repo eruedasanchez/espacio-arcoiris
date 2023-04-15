@@ -125,6 +125,7 @@ main{
 /*********** sponsors ***********/
 
 .container-sponsors {
+    height: 7rem;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -133,60 +134,75 @@ main{
     margin-top: 4.5rem; 
 }
 
-/*********** carrousel con cards ***********/
+/******* cards cursos mas elegidos *******/
 
-.carousel-cards-title h3{
-    color:  goldenrod;
-    font-weight: lighter;
+.cursos-elegidos{
+    height: 3rem;
+}
+
+.cursos-elegidos h3{
+    color: goldenrod;
     text-align: center;
+    font-weight: inherit;
 }
 
-.carousel-control-prev, .carousel-control-next{
-    background-color: goldenrod;
-    width: 6vh;
-    height: 6vh;
-    border-radius: 80%;
-    top: 50%;
-    /* transform: translateY(-50%); */
-}
-
-.carousel-control-prev span, .carousel-control-next span {
-    width: 1.5rem;
-    height: 1.5rem;
+.container-cards{
+    width: 100%;
+    height: 31rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
-    border: none;
-    border-radius: 0;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    width: 20rem;
+    height: 28rem;
+    background-color: #FCEFE4;
+    border-radius: 5%;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 1.2rem;
+    text-align: center;
+    transition: all 0.25s;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.color-card{
-    color: goldenrod; 
+.card:hover{
+    transform: translateY(-1.6rem);
+    box-shadow: rgba(0, 0, 0, 0.2);
 }
 
-.card-text-position{
-    text-align: center;
+.card img{
+    width: 12rem;
+    height: 15rem;
+    border-radius: 7%;
 }
 
-.carousel-inner{
-    padding: 1em;
+.card h4{
+    font-weight: 500;
+    padding-top: 0.6rem;
 }
 
-.image-wrapper img{
-    max-width: 100%;
-    max-height: 100%;
+.card p{
+    padding-top: 0.1rem;
+    font-size: 1.6rem;
+    font-weight: 250;
 }
-
 
 .button-tienda-position{
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
+
+
+
+
+
+
+
 
 /******* contenido exclusivo (linea de harinas) *******/
 
@@ -523,60 +539,6 @@ footer{
 }
 
 /****************************** promociones.html ******************************/
-
-.container-cards{
-    margin-top: 1.5rem;
-    height: 60rem;
-}
-
-.container-three-cards{
-    width: 100%;
-    height: 26rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.3rem;
-}
-
-.card{
-    background-color: #FCEFE4;
-    height: 26rem; 
-    border-radius: 0.9rem;
-    box-shadow: 0 0.02rem 0.02rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 2rem;
-    text-align: center;
-    transition: all 0.25s;
-}
-
-.card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.card img{
-    width: 9rem;
-    height: 14rem;
-    border-radius: 0.95rem;
-}
-
-.card h4{
-    margin-top: 0.8rem;
-    font-weight: 600;
-}
-
-.card p{
-    padding: 0.1rem;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-.card p span{
-    color: red;
-    font-size: 1.3rem;
-    padding-left: 0.4rem;
-    text-decoration:line-through;
-}
 
 /****************************** cursos.html ******************************/
 
@@ -1455,57 +1417,5 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/****** media del carousel con cards *****/
-
-
-
-@media screen and (min-width: 577px){
-    .cards-wrapper{
-    display: flex;
-    }
-    .card{
-    margin: 0 .5em;
-    width: calc(100%/3);
-    }
-    .image-wrapper{
-        height: 24vw;
-        margin: 0 auto;
-        /*
-        display: flex;
-        align-items: center;
-        justify-content: center; */
-        }
-}
-
-@media screen and (max-width: 576px){
-    .card:not(:first-child){
-        display: none;
-    }
-}
 
 
