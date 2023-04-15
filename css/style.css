@@ -609,18 +609,12 @@ footer{
     align-items: start;
 }
 
-
-
-
-/* hasta aca realice cambios */
-
-
-/* Media queries */
+/****************************** Media queries ******************************/
 
 @media(max-width:1439px){
+    /* 1024px a 1439px (Laptop) */
     
-    
-    /****************************** footer de 1024px a 1439px ******************************/
+    /****************************** footer ******************************/
     
     .container-information{
         width: 100%;
@@ -748,7 +742,7 @@ footer{
 /* 1rem = 16px */
 
 @media(max-width:1023px){
-    /* de 768px a 1023px */
+    /* 768px a 1023px (Tablet) */
 
     /****************************** footer ******************************/
 
@@ -891,7 +885,7 @@ footer{
 }
 
 @media(max-width:767px){
-    /* de 425px a 767px */
+    /* 425px a 767px (Mobile L) */
 
     /****************************** taller.html ******************************/
     
@@ -1023,6 +1017,47 @@ footer{
     }
 }
 
+@media(max-width:424px){
+    /* 375px a 424px (Mobile M) */
+
+    /****************************** footer ******************************/
+    
+    .container-newsletter{
+        height: 17rem;
+        display: grid;
+        grid-template-columns: 18rem;
+        grid-template-rows: repeat(4,4rem);
+    }
+}
+
+@media(max-width:424px){
+    /* 320px a 423px (Mobile S) */
+
+    /****************************** taller.html ******************************/
+
+    .container-maps{
+        height: 38rem;
+        display: grid;
+        grid-template-columns: 18.4rem;
+        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem) 10rem;
+        grid-template-areas: 
+        "map"
+        "map"
+        "map"
+        "map"
+        "location"
+        "location"
+        "location"
+        "location";
+    }
+
+    iframe{
+        width: 16rem;
+        height: 20rem;
+    }
+}
+
+/* hasta aca realice cambios */
 
 
 
