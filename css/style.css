@@ -535,6 +535,14 @@ footer{
 
 /****************************** promociones.html ******************************/
 
+.card p span{
+    font-size: 1.36rem;
+    color: red;
+    text-decoration: line-through;
+    font-weight: 600;
+    padding-left: 0.3rem;
+}
+
 /****************************** cursos.html ******************************/
 
 .container-cursos-title{
