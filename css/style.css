@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
 
+/*********** reset ***********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Urbanist', sans-serif; 
     overflow-x: hidden; 
@@ -24,209 +31,6 @@ svg{
 
 .nav-link:hover, .dropdown-item:hover{
     color: goldenrod !important;                     /* Al posicionarse encima de un link, cambia el color de la fuente a dorado */
-}
-
-/****************************** index.html ******************************/
-
-/*********** main ***********/
-
-main{
-    font-family: 'Urbanist', sans-serif;
-}
-
-/*********** carousel principal ***********/
-
-.carousel .carousel-indicators button{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;                               /* Cambio linea horizontal de boton por circulo */
-}
-
-.d-item{
-    height: 490px;                                     /* Largo del contenedor de las imagenes del carousel principal */
-}
-
-.d-img{
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.5);
-}
-
-.carousel-content{
-    margin-top: 7rem;
-}
-
-.carousel-content p, .carousel-content button{
-    color:  goldenrod;
-}
-
-/**** subtitulo principal con imagen con borde redondo ****/ 
-
-.container-main-subtitle{
-    margin-top: 6rem;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 4rem 6rem 4rem 5rem 4rem 6rem; 
-    grid-template-columns: 32rem 36rem;
-    grid-template-areas: 
-    "image fst-title"
-    "image fst-subtitle"
-    "image snd-title"
-    "image snd-subtitle"
-    "image thr-title"
-    "image thr-subtitle";
-}
-
-.fst-title{
-    grid-area: fst-title;                                
-}
-
-.fst-subtitle{
-    grid-area: fst-subtitle;                                         
-}
-
-.snd-title{
-    grid-area: snd-title;                                
-}
-
-.snd-subtitle{
-    grid-area: snd-subtitle;                                         
-}
-
-.thr-title{
-    grid-area: thr-title;                                
-}
-
-.thr-subtitle{
-    grid-area: thr-subtitle;                                         
-}
-
-.fst-title h2, .snd-title h2, .thr-title h2{
-    color: goldenrod;
-    font-size: 2.2rem;
-}
-
-.fst-subtitle h3, .snd-subtitle h3, .thr-subtitle h3{
-    font-size: 1.2rem;
-    padding-left: 0.8rem;
-    font-weight: inherit;
-    color: grey;
-}
-
-.main-image{
-    grid-area: image;  
-}
-
-.main-image img{
-    width: 26rem;
-    height: 26rem;
-    border-radius: 100%;
-    border-left: 0.5rem;
-}
-
-/*********** sponsors ***********/
-
-.container-sponsors {
-    height: 7rem;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 5.5rem;
-    margin-top: 4.5rem; 
-}
-
-/******* cards cursos mas elegidos *******/
-
-.cursos-elegidos{
-    height: 3rem;
-}
-
-.cursos-elegidos h3{
-    color: goldenrod;
-    text-align: center;
-    font-weight: inherit;
-}
-
-.container-cards{
-    width: 100%;
-    height: 31rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card{
-    width: 20rem;
-    height: 28rem;
-    background-color: #FCEFE4;
-    border-radius: 5%;
-    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 1.2rem;
-    text-align: center;
-    transition: all 0.25s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card:hover{
-    transform: translateY(-1.6rem);
-    box-shadow: rgba(0, 0, 0, 0.2);
-}
-
-.card img{
-    width: 12rem;
-    height: 15rem;
-    border-radius: 7%;
-}
-
-.card h4{
-    font-weight: 500;
-    padding-top: 0.6rem;
-}
-
-.card h5{
-    font-size: 1rem;
-    font-weight: 200;
-}
-
-.card p{
-    padding-top: 0.1rem;
-    font-size: 1.6rem;
-    font-weight: 250;
-}
-
-.button-tienda-position{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/******* contenido exclusivo (linea de harinas) *******/
-
-.exclusive{
-    width: 100vw;
-    height: 34rem;
-    display: flex;
-    align-items: center; 
-    background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .3)), url("../assets/img/index/main/exclusive-1.jpg"); /* efecto texto superpuesto */
-    background-position: center; 
-    background-size: cover;                              
-    background-repeat: no-repeat;
-}
-
-.exclusive-text h5{
-    color: goldenrod;
-}
-
-.exclusive-text h3, .exclusive-text h6{
-    color: white;
-}
-
-.exclusive-text h4{
-    color: gold;
 }
 
 /****************************** footer ******************************/
@@ -385,67 +189,205 @@ footer{
     text-align: center;
 }
 
-/****************************** taller.html ******************************/
+/****************************** index.html ******************************/
 
-.container-taller-title{
-    height: 5.5rem;
+main{
+    font-family: 'Urbanist', sans-serif;
 }
 
-.container-taller-title h1{
-    color: goldenrod;
-    font-size: 2.5rem;
+/*********** carousel principal ***********/
+
+.carousel .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;                               /* Cambia linea horizontal de boton por circulo */
 }
 
-.container-dir{
-    height: 8rem;
+.d-item{
+    height: 490px;                                    /* Largo del contenedor de las imagenes del carousel principal */
 }
 
-.container-dir h3{
-    color: goldenrod;
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
 }
 
-.container-maps{
-    height: 26rem;
+.carousel-content{
+    margin-top: 7rem;
+}
+
+.carousel-content p, .carousel-content button{
+    color:  goldenrod;
+}
+
+/*********** subtitulo principal con imagen con borde redondo ***********/ 
+
+.container-main-subtitle{
+    margin-top: 6rem;
     display: grid;
-    grid-template-columns: repeat(2, 22rem);
-    grid-template-rows: repeat(3,3rem) 12rem;
+    justify-content: center;
+    grid-template-rows: 4rem 6rem 4rem 5rem 4rem 6rem; 
+    grid-template-columns: 32rem 36rem;
     grid-template-areas: 
-    "map    location"
-    "map    location"
-    "map    location"
-    "map    location";
+    "image fst-title"
+    "image fst-subtitle"
+    "image snd-title"
+    "image snd-subtitle"
+    "image thr-title"
+    "image thr-subtitle";
 }
 
-.map{
-    height: 22rem;
-    grid-area: map;                                
+.fst-title{
+    grid-area: fst-title;                                
 }
 
-.location{
-    height: 20rem;
-    grid-area: location;
+.fst-subtitle{
+    grid-area: fst-subtitle;                                         
+}
+
+.snd-title{
+    grid-area: snd-title;                                
+}
+
+.snd-subtitle{
+    grid-area: snd-subtitle;                                         
+}
+
+.thr-title{
+    grid-area: thr-title;                                
+}
+
+.thr-subtitle{
+    grid-area: thr-subtitle;                                         
+}
+
+.fst-title h2, .snd-title h2, .thr-title h2{
+    color: goldenrod;
+    font-size: 2.2rem;
+}
+
+.fst-subtitle h3, .snd-subtitle h3, .thr-subtitle h3{
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+    font-weight: inherit;
+    color: grey;
+}
+
+.main-image{
+    grid-area: image;  
+}
+
+.main-image img{
+    width: 26rem;
+    height: 26rem;
+    border-radius: 100%;
+    border-left: 0.5rem;
+}
+
+/*********** sponsors ***********/
+
+.container-sponsors {
+    height: 7rem;
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5.5rem;
+    margin-top: 4.5rem; 
 }
 
-.location a{
+/*********** cards cursos mas elegidos ***********/
+
+.cursos-elegidos{
+    height: 3rem;
+}
+
+.cursos-elegidos h3{
+    color: goldenrod;
+    text-align: center;
+    font-weight: inherit;
+}
+
+.container-cards{
+    width: 100%;
+    height: 31rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 20rem;
+    height: 28rem;
+    background-color: #FCEFE4;
+    border-radius: 5%;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 1.2rem;
+    text-align: center;
+    transition: all 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    transform: translateY(-1.6rem);
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+    width: 12rem;
+    height: 15rem;
+    border-radius: 7%;
+}
+
+.card h4{
+    font-weight: 500;
+    padding-top: 0.6rem;
+}
+
+.card h5{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card p{
+    padding-top: 0.1rem;
+    font-size: 1.6rem;
+    font-weight: 250;
+}
+
+.button-tienda-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*********** contenido exclusivo (linea de harinas) ***********/
+
+.exclusive{
+    width: 100vw;
+    height: 34rem;
+    display: flex;
+    align-items: center; 
+    background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .3)), url("../assets/img/index/main/exclusive-1.jpg"); /* efecto texto superpuesto */
+    background-position: center; 
+    background-size: cover;                              
+    background-repeat: no-repeat;
+}
+
+.exclusive-text h5{
     color: goldenrod;
 }
 
-.whatsapp-ventas{
-    font-size: 1.2rem; 
-    text-decoration: none;
+.exclusive-text h3, .exclusive-text h6{
+    color: white;
 }
 
-.whatsapp-ventas img{
-    width: 2rem;
-    height: 2rem;
-}
-
-.whatsapp-ventas span{
-    color: goldenrod;
-    vertical-align: -8%;
+.exclusive-text h4{
+    color: gold;
 }
 
 /****************************** nosotros.html ******************************/
@@ -548,6 +490,74 @@ footer{
     padding-left: 0.3rem;
 }
 
+/****************************** taller.html ******************************/
+
+.container-taller-title{
+    height: 5.5rem;
+}
+
+.container-taller-title h1{
+    color: goldenrod;
+    font-size: 2.5rem;
+}
+
+.container-dir{
+    height: 8rem;
+}
+
+.container-dir h3{
+    color: goldenrod;
+}
+
+.container-dir h5, .location h5{
+    font-weight: inherit;
+    color: grey;
+}
+
+.container-maps{
+    height: 26rem;
+    display: grid;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3,3rem) 12rem;
+    grid-template-areas: 
+    "map    location"
+    "map    location"
+    "map    location"
+    "map    location";
+}
+
+.map{
+    height: 22rem;
+    grid-area: map;                                
+}
+
+.location{
+    height: 20rem;
+    grid-area: location;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.location a{
+    color: goldenrod;
+}
+
+.whatsapp-ventas{
+    font-size: 1.2rem; 
+    text-decoration: none;
+}
+
+.whatsapp-ventas img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.whatsapp-ventas span{
+    color: goldenrod;
+    vertical-align: -8%;
+}
+
 /****************************** cursos.html ******************************/
 
 .container-cursos-title{
@@ -579,13 +589,16 @@ footer{
     align-items: start;
 }
 
+/* falta completar */
+
+/****************************** capacitaciones-presenciales.html ******************************/
 
 .container-cap-presencial-title h1{
     font-size: 1.6rem;
     color: goldenrod;
 }
 
-/****************************** Media queries ******************************/
+/*************************************** Media queries ***************************************/
 
 @media(max-width:1439px){
     /* 1024px a 1439px (Laptop) */
@@ -923,7 +936,7 @@ footer{
         grid-row-start: 5;
         grid-row-end: 6;
     }
-
+    
     /****************************** index.html ******************************/
 
     /**** subtitulo principal con imagen con borde redondo ****/ 
@@ -966,15 +979,8 @@ footer{
     }
 
     /******* cards cursos mas elegidos *******/
-
     
-
-    
-
-    
-
     .container-cards{
-        color: aqua;
         width: 100%;
         height: 31rem;
         display: flex;
@@ -1032,108 +1038,6 @@ footer{
 @media(max-width:767px){
     /* 425px a 767px (Mobile L) */
 
-    /****************************** taller.html ******************************/
-    
-    .container-maps{
-        height: 38rem;
-        display: grid;
-        grid-template-columns: 22rem;
-        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem) 12rem;
-        grid-template-areas: 
-        "map"
-        "map"
-        "map"
-        "map"
-        "location"
-        "location"
-        "location"
-        "location";
-    }
-    
-    /****************************** index.html ******************************/
-
-    /**** subtitulo principal con imagen con borde redondo ****/ 
-
-    .container-main-subtitle{
-        height: 60rem;
-        display: grid;
-        margin-top: 3rem;
-        grid-template-rows: 3rem 8rem 3rem 6rem 4rem 5rem; 
-        grid-template-columns: 24rem;
-        grid-template-areas: 
-        "fst-title"
-        "fst-subtitle"
-        "snd-title"
-        "snd-subtitle"
-        "thr-title"
-        "thr-subtitle"
-        "image";
-    }
-    
-    .fst-title h2, .snd-title h2, .thr-title h2{
-        font-size: 1.6rem;
-    }
-    
-    .main-image img{
-        width: 22rem;
-        height: 22rem;
-        border-radius: 100%;
-        border-left: 0.5rem;
-    }
-    
-    /*********** sponsors ***********/
-
-    .container-sponsors{
-        height: 18rem;
-        list-style: none;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(2,12rem);
-        grid-template-rows: repeat(3,5.5rem);
-        column-gap: 0.5rem;
-        margin-top: 0.5rem; 
-    }
-
-    .callebaut{
-        padding-left: 7rem;
-    }
-
-    /******* cards cursos mas elegidos *******/
-
-    .container-cards{
-        width: 100%;
-        height: 95rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card{
-        width: 20rem;
-        height: 28rem;
-        margin: 1.2rem;
-    }
-    
-    .card img{
-        width: 12rem;
-        height: 15rem;
-    }
-
-    .card h4{
-        font-size: 1.4rem;
-    }
-
-    .card p{
-        font-size: 1.6rem;
-    }
-    
-    /******* contenido exclusivo (linea de harinas) *******/
-    
-    .exclusive{
-        width: 100%;
-    }
-    
     /****************************** footer ******************************/
     
     .container-newsletter{
@@ -1243,6 +1147,90 @@ footer{
         justify-content: center;
         align-items: center;
         padding-right: 1.2rem;
+    }
+    
+    /****************************** index.html ******************************/
+
+    /**** subtitulo principal con imagen con borde redondo ****/ 
+
+    .container-main-subtitle{
+        height: 60rem;
+        display: grid;
+        margin-top: 3rem;
+        grid-template-rows: 3rem 8rem 3rem 6rem 4rem 5rem; 
+        grid-template-columns: 24rem;
+        grid-template-areas: 
+        "fst-title"
+        "fst-subtitle"
+        "snd-title"
+        "snd-subtitle"
+        "thr-title"
+        "thr-subtitle"
+        "image";
+    }
+    
+    .fst-title h2, .snd-title h2, .thr-title h2{
+        font-size: 1.6rem;
+    }
+    
+    .main-image img{
+        width: 22rem;
+        height: 22rem;
+        border-radius: 100%;
+        border-left: 0.5rem;
+    }
+    
+    /*********** sponsors ***********/
+
+    .container-sponsors{
+        height: 18rem;
+        list-style: none;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2,12rem);
+        grid-template-rows: repeat(3,5.5rem);
+        column-gap: 0.5rem;
+        margin-top: 0.5rem; 
+    }
+
+    .callebaut{
+        padding-left: 7rem;
+    }
+
+    /******* cards cursos mas elegidos *******/
+
+    .container-cards{
+        width: 100%;
+        height: 95rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        width: 20rem;
+        height: 28rem;
+        margin: 1.2rem;
+    }
+    
+    .card img{
+        width: 12rem;
+        height: 15rem;
+    }
+
+    .card h4{
+        font-size: 1.4rem;
+    }
+
+    .card p{
+        font-size: 1.6rem;
+    }
+    
+    /******* contenido exclusivo (linea de harinas) *******/
+    
+    .exclusive{
+        width: 100%;
     }
 
     /****************************** nosotros.html ******************************/
@@ -1417,6 +1405,24 @@ footer{
         grid-row-start: 6;
         grid-row-end: 7;
     }
+    
+    /****************************** taller.html ******************************/
+    
+    .container-maps{
+        height: 38rem;
+        display: grid;
+        grid-template-columns: 22rem;
+        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem) 12rem;
+        grid-template-areas: 
+        "map"
+        "map"
+        "map"
+        "map"
+        "location"
+        "location"
+        "location"
+        "location";
+    }
 }
 
 @media(max-width:424px){
@@ -1472,6 +1478,13 @@ footer{
         column-gap: 1.8rem; 
         row-gap: 2rem;
     }
+
+    /****************************** promociones.html ******************************/
+
+    .container-promo-title h1{
+        color: goldenrod;
+        font-size: 2rem;
+    }
 }
 
 @media(max-width:374px){
@@ -1501,30 +1514,7 @@ footer{
     .callebaut{
         padding-left: 4.9rem;
     }
-
-    /****************************** taller.html ******************************/
-
-    .container-maps{
-        height: 38rem;
-        display: grid;
-        grid-template-columns: 18.4rem;
-        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem) 10rem;
-        grid-template-areas: 
-        "map"
-        "map"
-        "map"
-        "map"
-        "location"
-        "location"
-        "location"
-        "location";
-    }
-
-    iframe{
-        width: 16rem;
-        height: 20rem;
-    }
-
+    
     /****************************** nosotros.html ******************************/
 
     .container-taller-title h1{
@@ -1645,11 +1635,35 @@ footer{
         grid-row-start: 12;
         grid-row-end: 13;
     }
+
+    /****************************** promociones.html ******************************/
+
+    .container-promo-title h1{
+        color: goldenrod;
+        font-size: 1.6rem;
+    }
+
+    /****************************** taller.html ******************************/
+
+    .container-maps{
+        height: 38rem;
+        display: grid;
+        grid-template-columns: 18.4rem;
+        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem) 10rem;
+        grid-template-areas: 
+        "map"
+        "map"
+        "map"
+        "map"
+        "location"
+        "location"
+        "location"
+        "location";
+    }
+
+    iframe{
+        width: 16rem;
+        height: 20rem;
+    }
 }
-
-
-
-
-
-
 
