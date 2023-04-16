@@ -187,6 +187,11 @@ main{
     padding-top: 0.6rem;
 }
 
+.card h5{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
 .card p{
     padding-top: 0.1rem;
     font-size: 1.6rem;
@@ -572,6 +577,12 @@ footer{
     display: flex;
     justify-content: start;
     align-items: start;
+}
+
+
+.container-cap-presencial-title h1{
+    font-size: 1.6rem;
+    color: goldenrod;
 }
 
 /****************************** Media queries ******************************/
