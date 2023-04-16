@@ -1412,6 +1412,25 @@ footer{
         grid-template-rows: repeat(4,4rem);
     }
 
+    /****************************** index.html ******************************/
+
+    /**** subtitulo principal con imagen con borde redondo ****/ 
+
+    .container-main-subtitle{
+        grid-template-rows: 3rem 8rem 3rem 7rem 5rem 5rem; 
+        grid-template-columns: 22rem;
+    }
+
+    /**** sponsors ****/
+
+    .container-sponsors{
+        grid-template-columns: repeat(2,9.8rem);
+    }
+
+    .callebaut{
+        padding-left: 5.9rem;
+    }
+    
     /****************************** nosotros.html ******************************/
     
     .container-espacio{
@@ -1438,6 +1457,31 @@ footer{
 
 @media(max-width:374px){
     /* 320px a 374px (Mobile S) */
+
+    /****************************** index.html ******************************/
+
+    /**** subtitulo principal con imagen con borde redondo ****/ 
+
+    .container-main-subtitle{
+        grid-template-rows: 5rem 10rem 3rem 7rem 5rem 6rem; 
+        grid-template-columns: 18rem;
+    }
+
+    .main-image img{
+        width: 16rem;
+        height: 16rem;
+    }
+
+    /**** sponsors ****/
+
+    .container-sponsors{
+        grid-template-columns: repeat(2,8.4rem);
+        margin-right: 2rem;
+    }
+
+    .callebaut{
+        padding-left: 4.9rem;
+    }
 
     /****************************** taller.html ******************************/
 
