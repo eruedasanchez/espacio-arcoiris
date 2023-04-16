@@ -11,6 +11,7 @@ css/*.map
 css/*.css
 !bootstrap.min.css
 !style.css
+!style-principal-backup.css
 
 # ignore node's files 
 node_modules/
