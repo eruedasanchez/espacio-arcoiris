@@ -1,0 +1,34 @@
+@mixin dimensions($dimwidth, $dimheight){
+    width: $dimwidth;
+    height: $dimheight;
+}
+
+@mixin grid($justify, $align, $columns, $rows, $area){
+    display: grid;
+    justify-content: $justify;
+    align-items: $align;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $area;
+}
+
+@mixin gridAreaElements($areaName, $alignText, $weightFont){
+    grid-area: $areaName;                                
+    text-align: $alignText;
+    font-weight: $weightFont;
+}
+
+@mixin gridLimitElements($colStart, $colEnd, $rowStart, $rowEnd, $ord){
+    grid-column-start: $colStart;
+    grid-column-end: $colEnd;
+    grid-row-start: $rowStart;
+    grid-row-end: $rowEnd;     
+    order: $ord;
+}
+
+@mixin flex($justify, $alignit, $gap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignit;
+    gap: $gap;
+}
