@@ -1,0 +1,381 @@
+/****************************** index.html ******************************/
+
+main{
+    font-family: 'Urbanist', sans-serif;
+}
+
+/*********** carousel principal ***********/
+
+.carousel .carousel-indicators button{
+    @include width(10px);
+    @include height(10px);
+    border-radius: 100%;                   /* Cambia linea horizontal de boton por circulo */
+}
+
+/* 
+.carousel .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;                               
+}
+*/
+
+.d-item{
+    @include height(490px);                                    /* Largo del contenedor de las imagenes del carousel principal */
+    img{
+        @include height(100%);
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+}
+
+/*
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+*/
+
+.carousel-content{
+    margin-top: 7rem;
+    p, button{
+        color:  $color-titles;
+    }
+}
+
+/*
+.carousel-content p, .carousel-content button{
+    color:  goldenrod;
+}
+*/
+
+/*********** subtitulo principal con imagen con borde redondo ***********/ 
+
+.container-main-subtitle{
+    margin-top: 6rem;
+    @include grid(center, none, 32rem 36rem, 4rem 6rem 4rem 5rem 4rem 6rem);
+    grid-template-areas: 
+    "imagen fst-title"
+    "imagen fst-subtitle"
+    "imagen snd-title"
+    "imagen snd-subtitle"
+    "imagen thr-title"
+    "imagen thr-subtitle";
+}
+
+.container-main-subtitle div:first-child{
+    /* .fst-title */
+    @include gridArea(fst-title);
+    h2{
+        @include textStyle(2.2rem, $color-titles, none, none);
+    }
+}
+
+.container-main-subtitle div:nth-child(2){
+    /* .fst-subtitle */
+    @include gridArea(fst-subtitle);
+    h3{
+        @include textStyle(1.2rem, $color-subtitles, none, inherit);
+        padding-left: 0.8rem;
+    }
+}
+
+.container-main-subtitle div:nth-child(3){
+    /* .snd-title */
+    @include gridArea(snd-title);
+    h2{
+        @include textStyle(2.2rem, $color-titles, none, none);
+    }
+}
+
+.container-main-subtitle div:nth-child(4){
+    /* .snd-subtitle */
+    @include gridArea(snd-subtitle);
+    h3{
+        @include textStyle(1.2rem, $color-subtitles, none, inherit);
+        padding-left: 0.8rem;
+    }
+}
+
+.container-main-subtitle div:nth-child(5){
+    /* .thr-title */
+    @include gridArea(thr-title);
+    h2{
+        @include textStyle(2.2rem, $color-titles, none, none);
+    }
+}
+
+.container-main-subtitle div:nth-child(6){
+    /* .thr-subtitle */
+    @include gridArea(thr-subtitle);
+    h3{
+        @include textStyle(1.2rem, $color-subtitles, none, inherit);
+        padding-left: 0.8rem;
+    }
+}
+
+.container-main-subtitle div:nth-child(7){
+    /* .main-image */
+    @include gridArea(imagen);
+    img{
+        @include width(26rem);
+        @include height(26rem);
+        border-radius: 100%;
+        border-left: 0.5rem;
+    }
+}
+
+/*
+.container-main-subtitle{
+    margin-top: 6rem;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 4rem 6rem 4rem 5rem 4rem 6rem; 
+    grid-template-columns: 32rem 36rem;
+    grid-template-areas: 
+    "image fst-title"
+    "image fst-subtitle"
+    "image snd-title"
+    "image snd-subtitle"
+    "image thr-title"
+    "image thr-subtitle";
+}
+
+.fst-title{
+    grid-area: fst-title;                                
+}
+
+.fst-subtitle{
+    grid-area: fst-subtitle;                                         
+}
+
+.snd-title{
+    grid-area: snd-title;                                
+}
+
+.snd-subtitle{
+    grid-area: snd-subtitle;                                         
+}
+
+.thr-title{
+    grid-area: thr-title;                                
+}
+
+.thr-subtitle{
+    grid-area: thr-subtitle;                                         
+}
+
+.fst-title h2, .snd-title h2, .thr-title h2{
+    color: goldenrod;
+    font-size: 2.2rem;
+}
+
+.fst-subtitle h3, .snd-subtitle h3, .thr-subtitle h3{
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+    font-weight: inherit;
+    color: grey;
+}
+
+.main-image{
+    grid-area: image;  
+}
+
+.main-image img{
+    width: 26rem;
+    height: 26rem;
+    border-radius: 100%;
+    border-left: 0.5rem;
+}
+*/
+
+/*********** sponsors ***********/
+
+.container-sponsors {
+    @include height(7rem);
+    @include flex(row, none, center, none, 0, 5.5rem, 0);
+    list-style: $lists-style;
+    margin-top: 4.5rem;
+}
+
+/*
+.container-sponsors {
+    height: 7rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5.5rem;
+    margin-top: 4.5rem; 
+}
+*/
+
+/*********** cards cursos mas elegidos ***********/
+
+.cursos-elegidos{
+    @include height(3rem);
+    h3{
+        @include textStyle(1.75rem, $color-titles, center, inherit);
+    }
+}
+
+/*
+.cursos-elegidos h3{
+    color: goldenrod;
+    text-align: center;
+    font-weight: inherit;
+}
+*/
+
+.container-cards{
+    @include width(100%);
+    @include height(31rem);
+    @include flex(row, wrap, center, none, 0, 0, 0);
+}
+
+.card{
+    background-color: $main-background;
+    @include width(20rem);
+    @include height(28rem);
+    border-radius: 5%;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 1.2rem;
+    text-align: center;
+    transition: all 0.25s;
+    @include flex(none, none, center, center, 0, 0, 0);
+    &:hover{
+        transform: translateY(-1.6rem);
+        box-shadow: rgba(0, 0, 0, 0.2);
+    }
+    img{
+        @include width(12rem);
+        @include height(15rem);
+        border-radius: 7%;
+    }
+    h4{
+        @include textStyle(1.5rem, $color-black, none, 500);
+        padding-top: 0.6rem;
+    }
+    h5{
+        @include textStyle(1rem, $color-black, none, 200);
+    }
+    p{
+        padding-top: 0.1rem;
+        @include textStyle(1.6rem, $color-black, none, 250);
+    }
+}
+
+.button-tienda-position{
+    @include flex(row, none, center, center, 0, 0, 0);
+}
+
+/*
+.container-cards{
+    width: 100%;
+    height: 31rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 20rem;
+    height: 28rem;
+    background-color: #FCEFE4;
+    border-radius: 5%;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 1.2rem;
+    text-align: center;
+    transition: all 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    transform: translateY(-1.6rem);
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+    width: 12rem;
+    height: 15rem;
+    border-radius: 7%;
+}
+
+.card h4{
+    font-weight: 500;
+    padding-top: 0.6rem;
+}
+
+.card h5{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card p{
+    padding-top: 0.1rem;
+    font-size: 1.6rem;
+    font-weight: 250;
+}
+
+.button-tienda-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+/*********** contenido exclusivo (linea de harinas) ***********/
+
+.exclusive{
+    @include width(100vw);
+    @include height(34rem);
+    display: flex;
+    align-items: center; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../assets/img/index/main/exclusive-1.jpg"); 
+    @include backgroundStyle(center, cover, no-repeat);
+    div{
+        h5{
+            /* exclusive-text h5 */
+            color: $color-titles;
+        }
+        h3, h6{
+            color: $color-white;
+        }
+        h4{
+            color: $color-gold;
+        }
+    }
+}
+
+/* 
+.exclusive{
+    width: 100vw;
+    height: 34rem;
+    display: flex;
+    align-items: center; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../assets/img/index/main/exclusive-1.jpg"); 
+    background-position: center; 
+    background-size: cover;                              
+    background-repeat: no-repeat;
+}
+
+.exclusive-text h5{
+    color: goldenrod;
+}
+
+.exclusive-text h3, .exclusive-text h6{
+    color: white;
+}
+
+.exclusive-text h4{
+    color: gold;
+}
+
+*/
+

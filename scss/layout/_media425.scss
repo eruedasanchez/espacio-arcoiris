@@ -1,0 +1,706 @@
+@media(max-width:767px){
+    /* 425px a 767px (Mobile L) */
+
+    /****************************** footer ******************************/
+    
+    .container-newsletter{
+        @include height(14rem);
+        @include grid(center, none, 25rem, 2rem 6rem 2rem 3rem);
+        grid-template-areas: 
+        "recibi"
+        "suscribite"
+        "form"
+        "form"; 
+    }
+
+    /*
+
+    .container-newsletter{
+        height: 14rem;
+        display: grid;
+        grid-template-columns: 24rem;
+        grid-template-rows: 2rem 4rem 2rem 3rem;
+        grid-template-areas: 
+        "recibi"
+        "suscribite"
+        "form"
+        "form"; 
+    }
+
+    */
+
+    .container-information{
+        @include width(100%);
+        @include height(40rem);
+        @include grid(center, none, 19rem, 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem));
+    }
+    
+    /*
+    .container-information{
+        width: 100%;
+        height: 40rem;
+        display: grid;
+        grid-template-columns: 19rem; 
+        grid-template-rows: 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem);
+    }
+
+    */
+
+    .container-information div:first-child h2{
+        /* .footer-taller h2 */
+        text-align: center;
+    }
+
+    .container-information div:first-child{
+        h2{
+            /* .footer-taller h2 */
+            text-align: center;
+        }
+        h6:first-child, h6:nth-child(2){
+            /* .taller-h6-dir */ 
+            text-align: center;  
+        }
+        h6:nth-child(2){
+            /* .taller-h6-hor-lv */ 
+            text-align: center;  
+        }
+        h6:nth-child(3){
+            /* .taller-h6-hor-sat */
+            text-align: center;  
+        }
+    }
+    
+    /*
+    .footer-taller h2 , .taller-h6-dir, .taller-h6-hor-lv, .taller-h6-hor-sat{
+        text-align: center;
+    }
+    */
+
+    .container-information div:nth-child(2){
+        /* .footer-sale */
+        @include gridLimitElements(1, 2, 5, 9);
+        order: 2;
+        h2{
+            text-align: center;
+            @include gridLimitElements(1, 2, 5, 6);
+        }
+        ul{
+            /* .footer-sale-contact */
+            @include width(16rem);
+            justify-content: center;
+            align-items: center;
+            @include padding(none, none, 3.5rem, none);
+        }
+    }
+    
+    /*
+    .footer-sale{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 9;     
+        order: 2;                         
+    }
+
+    .footer-sale h2{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .footer-sale-contact{
+        width: 16rem;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3.5rem;
+    }
+
+    */
+
+    .footer-information{
+        @include gridLimitElements(1, 2, 9, 13);
+        order: 3;  
+        h2{
+            text-align: center;
+            @include gridLimitElements(1, 2, 9, 10);
+        }                       
+    }
+
+    .footer-information h6:first-child{
+        /* .information-pagos */
+        text-align: center;
+        @include gridLimitElements(1, 2, 10, 11);
+    }
+
+    .footer-information h6:nth-child(2){
+        /* .information-join */
+        text-align: center;
+        @include gridLimitElements(1, 2, 11, 12);
+    }
+
+    .footer-information h6:nth-child(3){
+        /* .information-estafas */
+        text-align: center;
+        @include gridLimitElements(1, 2, 12, 13);
+    }
+
+    /*
+    
+    .footer-information{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 13;     
+        order: 3;                         
+    }
+
+    .footer-information h2{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+
+    .information-pagos{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+
+    .information-join{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 11;
+        grid-row-end: 12;
+    }
+
+    .information-estafas{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 12;
+        grid-row-end: 13;
+    }
+
+    */
+
+    .container-information div:nth-child(4){
+        /* .footer-social-networks */
+        @include gridLimitElements(1, 2, 13, 17);
+        order: 4; 
+        h2{
+            text-align: center;
+            @include gridLimitElements(1, 2, 13, 14);
+        }
+        ul{
+            /* .footer-redes */
+            justify-content: center;
+            align-items: center;
+            @include padding(0, 0, 0, 1.2rem);
+        }
+    }
+    
+    /*
+    
+    .footer-social-networks{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 13;
+        grid-row-end: 17;     
+        order: 4;                         
+    }
+
+    .footer-social-networks h2{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 13;
+        grid-row-end: 14;
+    }
+
+    .footer-redes{
+        justify-content: center;
+        align-items: center;
+        padding-right: 1.2rem;
+    }
+
+    */
+
+
+    /****************************** taller.html ******************************/
+    
+    .container-maps{
+        @include height(38rem);
+        @include grid(none, none, 22rem, repeat(3,3rem) 12rem repeat(3,3rem) 12rem);
+        grid-template-areas: 
+        "map"
+        "map"
+        "map"
+        "map"
+        "location"
+        "location"
+        "location"
+        "location";
+    }
+    
+    /*
+    .container-maps{
+        height: 38rem;
+        display: grid;
+        grid-template-columns: 22rem;
+        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem) 12rem;
+        grid-template-areas: 
+        "map"
+        "map"
+        "map"
+        "map"
+        "location"
+        "location"
+        "location"
+        "location";
+    }
+    */
+
+
+    /****************************** nosotros.html ******************************/
+
+    .container-video{
+        @include width(100%);
+        @include height(20rem);
+        video{
+            @include height(22rem);
+            @include width(90vw);
+        }
+    }
+
+    /*
+
+    .container-video{
+        height: 20rem;
+        width: 100%;
+    }
+
+    .container-video video{
+        height: 22rem;
+        width: 90vw;
+    }
+
+    */
+
+    .container-espacio{
+        @include height(66rem);
+        @include grid(none, none, 22rem, 5rem 10rem 18rem 25rem);
+        img{
+            @include width(22rem);
+            @include height(26rem);
+            @include gridLimitElements(1, 2, 4, 5);
+            padding-left: 1rem;
+        }
+        h3, h5, h6{
+            text-align: center;
+        }
+    }
+    
+    /* 
+    .container-espacio{
+        height: 66rem;
+        display: grid;
+        grid-template-columns: 22rem;
+        grid-template-rows: 5rem 10rem 18rem 25rem;
+    }
+
+    .container-espacio img{
+        width: 22rem;
+        height: 26rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        padding-left: 1rem;
+    }
+
+    .container-espacio h3{
+        text-align: center;
+    }
+
+    .container-espacio h5, .container-espacio h6{
+        text-align: center;
+    }
+
+    */
+
+    .container-unique{
+        @include height(35rem);
+    }
+    
+    /*
+    .container-unique{
+        height: 35rem;
+    }
+    */
+
+    .container-unique div:nth-child(2){
+        /* .container-elements */
+        @include grid(none, none, repeat(2,10rem), 4rem 3rem 2rem 4rem 3rem 2rem);
+        padding-top: 1rem;
+        column-gap: 2.4rem; 
+        row-gap: 2rem;
+    }
+
+    /*
+    
+    .container-elements{
+        display: grid;
+        padding-top: 1rem;
+        grid-template-columns: repeat(2,10rem);
+        grid-template-rows: 4rem 3rem 2rem 4rem 3rem 2rem; 
+        column-gap: 2.4rem; 
+        row-gap: 2rem;
+    }
+    */
+
+    .container-unique div:nth-child(2) div:first-child{
+        /* element-quality */
+        @include gridLimitElements(1, 2, 1, 4);
+        margin-bottom: 0.8rem;
+        order: 1;
+        img{
+            @include gridLimitElements(1, 2, 1, 2);
+            justify-self: center;
+        }
+        h4{
+            @include gridLimitElements(1, 2, 2, 3);
+        }
+        h6{
+            @include gridLimitElements(1, 2, 3, 4);
+        }
+    }
+
+
+
+    /*
+    .element-quality{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin-bottom: 0.8rem;
+        order: 1;
+    }
+    
+    .element-quality img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    .element-quality h4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .element-quality h6{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    */
+
+    .container-unique div:nth-child(2) div:nth-child(2){
+        /* element-variedad */
+        @include gridLimitElements(2, 3, 1, 4);
+        margin-bottom: 1.2rem;
+        order: 2;
+        img{
+            @include gridLimitElements(2, 3, 1, 2);
+            justify-self: center;
+        }
+        h4{
+            @include gridLimitElements(2, 3, 2, 3);
+        }
+        h6{
+            @include gridLimitElements(2, 3, 3, 4);
+        }
+    }
+
+    /*
+
+    .element-variedad{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin-bottom: 0.3rem;
+        order: 2;
+    }
+
+    .element-variedad img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    .element-variedad h4{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .element-variedad h6{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    */
+
+    .container-unique div:nth-child(2) div:nth-child(3){
+        /* element-cliente */
+        @include gridLimitElements(1, 2, 4, 7);
+        margin-bottom: 1.3rem;
+        order: 3;
+        img{
+            @include gridLimitElements(1, 2, 4, 5);
+            justify-self: center;
+        }
+        h4{
+            @include gridLimitElements(1, 2, 5, 6);
+        }
+        h6{
+            @include gridLimitElements(1, 2, 6, 7);
+        }
+    }
+
+    /*
+
+    .element-client{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 7;
+        margin-bottom: 1.3rem;
+        order: 3;
+    }
+
+    .element-client img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: center;
+    }
+
+    .element-client h4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .element-client h6{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    */
+
+    .container-unique div:nth-child(2) div:nth-child(4){
+        /* element-student */
+        @include gridLimitElements(2, 3, 4, 7);
+        order: 4;
+        img{
+            @include gridLimitElements(2, 3, 4, 5);
+            justify-self: center;
+        }
+        h4{
+            @include gridLimitElements(2, 3, 5, 6);
+        }
+        h6{
+            @include gridLimitElements(1, 2, 6, 7);
+        }
+    }
+    
+    /*
+
+    .element-student{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 7;
+        order: 4;
+    }
+
+    .element-student img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: center;
+    }
+
+    .element-student h4{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .element-student h6{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    */
+
+    /****************************** index.html ******************************/
+
+    /**** subtitulo principal con imagen con borde redondo ****/ 
+
+    .container-main-subtitle{
+        @include height(60rem);
+        margin-top: 3rem;
+        @include grid(center, none, 24rem, 3rem 8rem 3rem 6rem 4rem 5rem);
+        grid-template-areas: 
+            "fst-title"
+            "fst-subtitle"
+            "snd-title"
+            "snd-subtitle"
+            "thr-title"
+            "thr-subtitle"
+            "imagen";
+    }
+    
+    .container-main-subtitle div:first-child{
+        h2{
+            /* .fst-title h2 */
+            font-size: 1.6rem;
+        }
+    }
+    
+    .container-main-subtitle div:nth-child(3){
+        h2{
+            /* .snd-title h2 */
+            font-size: 1.6rem;
+        }
+    }
+    
+    .container-main-subtitle div:nth-child(5){
+        h2{
+            /* .thr-title h2 */
+            font-size: 1.6rem;
+        }
+    }
+    
+    .container-main-subtitle div:nth-child(7){
+        img{
+            /* .main-image img */ 
+            @include width(19rem);
+            @include height(19rem);
+            border-left: 0.5rem;
+            margin-top: 5rem;
+        }
+    }
+    
+    
+    
+    /* 
+    .container-main-subtitle{
+        height: 60rem;
+        display: grid;
+        margin-top: 3rem;
+        grid-template-rows: 3rem 8rem 3rem 6rem 4rem 5rem; 
+        grid-template-columns: 24rem;
+        grid-template-areas: 
+        "fst-title"
+        "fst-subtitle"
+        "snd-title"
+        "snd-subtitle"
+        "thr-title"
+        "thr-subtitle"
+        "image";
+    }
+    
+    .fst-title h2, .snd-title h2, .thr-title h2{
+        font-size: 1.6rem;
+    }
+    
+    .main-image img{
+        width: 22rem;
+        height: 22rem;
+        border-radius: 100%;
+        border-left: 0.5rem;
+    }
+
+    */
+    
+    /*********** sponsors ***********/
+
+    .container-sponsors{
+        @include height(28rem);
+        list-style: $lists-style;
+        @include grid(center, center, repeat(2,12rem), repeat(3,5.5rem));
+        column-gap: 0.5rem;
+        margin-top: 0.5rem; 
+    }
+
+    .container-sponsors li:nth-child(5){
+        a{
+            /* .callebaut */
+            padding-left: 7rem;
+        }
+    }
+    
+    /******* cards cursos mas elegidos *******/
+
+    .container-cards{
+        @include width(100%);
+        @include height(95rem);
+        @include flex(none, wrap, center, none, 0, 0, 0);
+    }
+
+    .card{
+        @include width(20rem);
+        @include height(28rem);
+        margin: 1.2rem;
+        img{
+            @include width(12rem);
+            @include height(15rem);
+        }
+        h4{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+    }
+    
+    /******* contenido exclusivo (linea de harinas) *******/
+    
+    .exclusive{
+        @include width(100%);
+    }
+
+
+
+    
+
+
+}

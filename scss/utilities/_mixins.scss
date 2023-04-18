@@ -1,34 +1,84 @@
-@mixin dimensions($dimwidth, $dimheight){
-    width: $dimwidth;
-    height: $dimheight;
+@mixin reset($margin, $padding, $boxsizing){
+    margin: $margin;
+    padding: $padding;
+    box-sizing: $boxsizing;
 }
 
-@mixin grid($justify, $align, $columns, $rows, $area){
+@mixin headerStyle($boxshadow, $position, $top, $zetaindex){
+    box-shadow: $boxshadow;
+    position: $position;                                   
+    top: $top;                                          
+    z-index: $zetaindex;
+}
+
+@mixin height($height){
+    height: $height;
+}
+
+@mixin width($width){
+    width: $width;
+}
+
+@mixin textStyle($fontsize, $color, $textalign, $fontweight){
+    font-size: $fontsize;                                
+    color: $color;
+    text-align: $textalign;
+    font-weight: $fontweight;
+}
+
+@mixin flex($direction, $wrap, $justify, $alignit, $gap, $colgap, $rowgap){
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $alignit;
+    gap: $gap;
+    column-gap: $colgap;
+    row-gap: $rowgap;
+}
+
+@mixin grid($justify, $align, $columns, $rows){
     display: grid;
     justify-content: $justify;
     align-items: $align;
     grid-template-columns: $columns;
     grid-template-rows: $rows;
-    grid-template-areas: $area;
 }
 
-@mixin gridAreaElements($areaName, $alignText, $weightFont){
-    grid-area: $areaName;                                
-    text-align: $alignText;
-    font-weight: $weightFont;
+@mixin gridArea($gdarea){
+    grid-area: $gdarea;
 }
 
-@mixin gridLimitElements($colStart, $colEnd, $rowStart, $rowEnd, $ord){
-    grid-column-start: $colStart;
-    grid-column-end: $colEnd;
-    grid-row-start: $rowStart;
-    grid-row-end: $rowEnd;     
-    order: $ord;
+@mixin gridLimitElements($colstart, $colend, $rowstart, $rowend){
+    grid-column-start: $colstart;
+    grid-column-end: $colend;
+    grid-row-start: $rowstart;
+    grid-row-end: $rowend;     
 }
 
-@mixin flex($justify, $alignit, $gap){
-    display: flex;
-    justify-content: $justify;
-    align-items: $alignit;
-    gap: $gap;
+@mixin padding($ptop, $pbottom, $pleft, $pright){
+    padding-top: $ptop;
+    padding-bottom: $pbottom;
+    padding-left: $pleft;
+    padding-right: $pright;
 }
+
+@mixin margin($mtop, $mbottom, $mleft, $mright){
+    margin-top: $mtop;
+    margin-bottom: $mbottom;
+    margin-left: $mleft;
+    margin-right: $mright;
+}
+
+@mixin backgroundStyle($bgdpos, $bgdsize, $bgdrep){
+    background-position: $bgdpos; 
+    background-size: $bgdsize;                              
+    background-repeat: $bgdrep;
+}
+
+
+
+
+
+
+

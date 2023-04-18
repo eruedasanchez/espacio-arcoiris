@@ -5,90 +5,180 @@ footer{
 }
 
 .container-newsletter{
-    @include dimensions(none,9rem);    
-    @include grid(center,none,repeat(2, 30rem), 2rem 5rem,"recibi form" "suscribite form");
+    @include height(9rem);
+    @include grid(center, none, repeat(2,30rem), 2rem 5rem);
+    grid-template-areas: 
+    "recibi form"
+    "suscribite form"; 
     p{
-        @include gridAreaElements(recibi, left, none);
+        @include gridArea(recibi);                               
+        text-align: left;
     }
     h2{
-        @include gridAreaElements(suscribite, left, bolder);
-        color: $color-main-text;
+        @include gridArea(suscribite);  
+        @include textStyle(2rem, $color-titles, left, bolder);                       
     }
-}
-
-.form{
-    @include gridAreaElements(form, none, none);
-    justify-content: center;
+    div{
+        @include gridArea(form);                                
+        justify-content: center;
+    }
 }
 
 .container-information{
-    @include dimensions(100%,12rem);
-    @include grid(center, none, repeat(4,20rem), 5rem repeat(3,2rem), none);           
-    .footer-taller{
-        @include dimensions(100%,10rem); 
-        @include gridLimitElements(1, 2, 1, 5, 1);
-        h2{
-            font-size: 1.8rem; 
-            color: $color-main-text;
-            @include gridLimitElements(1, 2, 1, 2, none);
-        }                    
-    }
-    .footer-sale{
-        @include dimensions(none,10rem);
-        @include gridLimitElements(2, 3, 1, 5, 2);
-        h2{
-            font-size: 1.8rem; 
-            color: $color-main-text;
-            @include gridLimitElements(2, 3, 1, 2, none);
-        }   
-        .footer-sale-contact{
-            list-style: $lists-style;
-            padding-left: 0.1rem;
-            li a{
-                text-decoration: none;
-                img{
-                    @include dimensions(1.4rem, 1.4rem);
-                }
-                span{
-                    color: black;
-                    vertical-align: -5%;
-                }
-            }
-        }                   
-    }
-    .footer-information{
-        @include dimensions(none,10rem);
-        @include gridLimitElements(3, 4, 1, 5, 3);
-        h2{
-            font-size: 1.8rem; 
-            color: $color-main-text;
-            @include gridLimitElements(3, 4, 1, 2, none);
-        }                       
-    }
-    .footer-social-networks{
-        @include dimensions(none,10rem);
-        @include gridLimitElements(4, 5, 1, 5, 4);
-        h2{
-            font-size: 1.8rem; 
-            color: $color-main-text;
-            @include gridLimitElements(4, 5, 1, 2, none);
-        }
-        .footer-redes{
-            @include flex(none, none, 1rem);
-            li{
-                list-style: $lists-style; 
-            }
-        }                     
+    @include height(12rem);
+    @include width(100%);
+    @include grid(center, none, repeat(4, 20rem), 5rem repeat(3, 2rem));
+}
+
+.container-information div:first-child{
+    /* .footer-taller */
+    @include height(10rem); 
+    @include gridLimitElements(1, 2, 1, 5);
+    order: 1;     
+    h2{
+        @include textStyle(1.8rem, $color-titles, left, none);
+        @include gridLimitElements(1, 2, 1, 2);
     }
 }
 
-.copyright{
-    background-color: $background-color-copyright;  
-    @include dimensions(none, 8vh);
-    @include flex(center, center, none); 
-    h6{
-        color: $color-text-copyright;
-        text-align: center;
+.container-information div:nth-child(2){
+    /* .footer-sale */
+    @include height(10rem);
+    @include gridLimitElements(2, 3, 1, 5);
+    order: 2;
+    h2{
+        @include textStyle(1.8rem, $color-titles, left, none);
+        @include gridLimitElements(2, 3, 1, 2);
+    }
+    ul{
+        /* .footer-sale-contact */
+        list-style: $lists-style;
+        @include padding(none, none, 0.1rem, none);
+        li a{
+            text-decoration: none;
+            img{
+                @include height(1.4rem);
+                @include width(1.4rem);
+            }
+            span{
+                color: $color-black;
+                vertical-align: -5%;
+            }
+        }
     }
 }
+
+
+
+/*
+
+.footer-sale-contact li a{
+    text-decoration: none;
+}
+
+.footer-sale-contact li a img{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.footer-sale-contact a span{
+    color: black;
+    vertical-align: -5%;
+}
+
+*/
+
+.footer-information{
+    @include height(10rem);
+    @include gridLimitElements(3, 4, 1, 5);
+    order: 3;  
+    h2{
+        @include textStyle(1.8rem, $color-titles, left, none);
+        @include gridLimitElements(3, 4, 1, 2);
+    }                       
+}
+
+/*
+
+.footer-information{
+    height: 10rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;     
+    order: 3;                         
+}
+
+.footer-information h2{
+    font-size: 1.8rem; 
+    color: goldenrod;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+*/
+
+.container-information div:nth-child(4){
+    /* .footer-social-networks */
+    @include height(10rem);
+    @include gridLimitElements(4, 5, 1, 5);
+    order: 4; 
+    h2{
+        @include textStyle(1.8rem, $color-titles, left, none);
+        @include gridLimitElements(4, 5, 1, 2);
+    }
+    ul{
+        /* .footer-redes */
+        display: flex;
+        gap: 1rem;
+        li{
+            list-style: $lists-style;
+        }
+    }
+}
+
+
+
+
+/* 
+.footer-social-networks{
+    height: 10rem;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;     
+    order: 4;                         
+}
+
+.footer-social-networks h2{
+    font-size: 1.8rem; 
+    color: goldenrod;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-redes{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-redes li{
+    list-style: none; 
+}
+*/
+
+.copyright{
+    background-color: $background-copyright;
+    @include height(8vh);
+    @include flex(none, none, center, center, none, none, none);
+    h6{
+        @include textStyle(1rem, $color-white, center, none);
+    }
+}
+
+
 

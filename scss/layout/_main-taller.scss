@@ -1,0 +1,131 @@
+/****************************** taller.html ******************************/
+
+.container-taller-title{
+    @include height(5.5rem);
+    h1{
+        @include textStyle(2.5rem, $color-titles, left, none);
+    }
+}
+
+.container-dir{
+    @include height(8rem);
+    h3{
+        color: $color-titles;
+    }
+    h5{
+        @include textStyle(1.25rem, $color-subtitles, left, inherit);
+    }
+}
+
+
+/*
+
+.container-dir h5, .location h5{
+    font-weight: inherit;
+    color: grey;
+}
+
+*/
+
+.container-maps{
+    @include height(26rem);
+    @include grid(none, none, repeat(2, 22rem), repeat(3,3rem) 12rem);
+    grid-template-areas: 
+    "map    location"
+    "map    location"
+    "map    location"
+    "map    location";
+}
+
+.container-maps div:first-child{
+    /* .map */
+    @include height(22rem);
+    @include gridArea(map);
+}
+
+.container-maps div:nth-child(2){
+    /* .location */
+    @include height(20rem);
+    @include gridArea(location);
+    @include flex(column, none, none, none, 0, 0, 0);
+    margin-top: 1.5rem;
+    a{
+        color: $color-titles;
+    }
+    h5{
+        @include textStyle(1.25rem, $color-subtitles, left, inherit);
+    }
+}
+
+/*
+
+.container-maps{
+    @include height(26rem);
+    @mixin grid($justify, $align, $columns, $rows);
+    height: 26rem;
+    display: grid;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3,3rem) 12rem;
+    grid-template-areas: 
+    "map    location"
+    "map    location"
+    "map    location"
+    "map    location";
+}
+
+.map{
+    height: 22rem;
+    grid-area: map;                                
+}
+
+.location{
+    height: 20rem;
+    grid-area: location;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.location a{
+    color: goldenrod;
+}
+
+.location h5{
+    font-weight: inherit;
+    color: grey;
+}
+
+*/
+
+.whatsapp-ventas{
+    font-size: 1.2rem; 
+    text-decoration: none;
+    img{
+        @include width(2rem);
+        @include height(2rem);
+    }
+    span{
+        color: $color-titles;
+        vertical-align: -8%;
+    }
+}
+
+
+
+/* 
+.whatsapp-ventas{
+    font-size: 1.2rem; 
+    text-decoration: none;
+}
+
+.whatsapp-ventas img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.whatsapp-ventas span{
+    color: goldenrod;
+    vertical-align: -8%;
+}
+
+*/

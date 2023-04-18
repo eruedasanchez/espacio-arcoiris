@@ -1,0 +1,19 @@
+/****************************** header ******************************/
+
+header{
+    @include headerStyle(0px 3px 8px rgba(0, 0, 0, 0.323), sticky, 0, 2);
+}
+
+nav{
+    background-color: $main-background;
+}
+
+svg{
+    color: $color-black;
+}
+
+.nav-link, .dropdown-item{
+    &:hover{
+        color: $color-titles !important;         
+    }
+}
