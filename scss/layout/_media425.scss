@@ -19,21 +19,11 @@
         @include grid(center, none, 19rem, 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem));
     }
     
-    .container-information div:first-child h2{
-        text-align: center;
-    }
-
     .container-information div:first-child{
         h2{
             text-align: center;
         }
-        h6:first-child, h6:nth-child(2){
-            text-align: center;  
-        }
-        h6:nth-child(2){
-            text-align: center;  
-        }
-        h6:nth-child(3){
+        h6:first-child, h6:nth-child(2), h6:nth-child(3), h6:nth-child(4){
             text-align: center;  
         }
     }
@@ -46,10 +36,10 @@
             @include gridLimitElements(1, 2, 5, 6);
         }
         ul{
-            @include width(16rem);
+            @include width(18rem);
             justify-content: center;
-            align-items: center;
-            @include padding(none, none, 3.5rem, none);
+            align-items: center; 
+            @include padding(none, none, 3.7rem, none);
         }
     }
     
@@ -76,6 +66,10 @@
         text-align: center;
         @include gridLimitElements(1, 2, 12, 13);
     }
+
+    .footer-information h6:nth-child(4){
+        text-align: center;
+    }
     
     .container-information div:nth-child(4){
         @include gridLimitElements(1, 2, 13, 17);
@@ -87,16 +81,16 @@
         ul{
             justify-content: center;
             align-items: center;
-            @include padding(0, 0, 0, 1.2rem);
+            @include padding(0, 0, 0.4rem, 0);
         }
     }
 
     /****************************** index.html ******************************/
 
     .container-main-subtitle{
-        @include height(60rem);
+        @include height(57rem);
         margin-top: 3rem;
-        @include grid(center, none, 24rem, 3rem 8rem 3rem 6rem 4rem 5rem);
+        @include grid(center, none, 24rem, 3rem 8rem 3rem 6rem 3rem 10rem);
         grid-template-areas: 
             "fst-title"
             "fst-subtitle"
@@ -129,22 +123,23 @@
         img{
             @include width(19rem);
             @include height(19rem);
-            border-left: 0.5rem;
-            margin-top: 5rem;
+            margin-top: 1.6rem;
+            margin-left: 2rem;
         }
     }
     
-    .container-sponsors{
-        @include height(28rem);
+    .sponsors{
+        @include height(20rem);
         list-style: $lists-style;
-        @include grid(center, center, repeat(2,12rem), repeat(3,5.5rem));
-        column-gap: 0.5rem;
-        margin-top: 0.5rem; 
+        @include grid(center, center, repeat(2,10rem), repeat(3,5.5rem));
+        column-gap: 1.1rem;
+        margin-top: 0.5rem;
+        padding-left: 3rem;
     }
 
-    .container-sponsors li:nth-child(5){
+    .sponsors li:nth-child(5){
         a{
-            padding-left: 7rem;
+            padding-left: 6.2rem;
         }
     }
     

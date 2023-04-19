@@ -14,25 +14,39 @@
     /****************************** index.html ******************************/
     
     .container-main-subtitle{
-        grid-template-rows: 3rem 8rem 3rem 7rem 5rem 5rem; 
+        grid-template-rows: 3rem 8rem 3rem 7rem 5rem 9rem; 
         grid-template-columns: 22rem;
     }
+
+    .container-main-subtitle div:nth-child(7){
+        img{
+            margin-left: 1.1rem;
+        }
+    }
     
-    .container-sponsors{
+    .sponsors{
+        @include height(18rem);
         grid-template-columns: repeat(2,9.8rem);
     }
 
-    .container-sponsors li:nth-child(5){
+    .sponsors li:nth-child(5){
         a{
             padding-left: 5.9rem;
+        }
+    }
+
+    .cursos-elegidos{
+        @include height(4rem);
+        h3{
+            font-size: 1.6rem;
         }
     }
     
     /****************************** nosotros.html ******************************/
 
     .container-espacio{
-        @include height(62rem);
-        @include grid(none, none, 20rem, 5rem 12rem 19rem 22rem);
+        @include height(64rem);
+        @include grid(none, none, 20rem, 5rem 12rem 21rem 22rem);
         padding-top: 0.5rem;
         img{
             @include width(18rem);

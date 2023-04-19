@@ -128,13 +128,16 @@
             @include width(23rem);
             @include height(23rem);
             border-radius: 90%;
-            border-left: 0.3rem;
+            border-left: 0.6rem;
             padding-left: 0.5rem;
         }
     }
     
     .card{
         @include width(18rem);
+        h4{
+            font-size: 1.3rem;
+        }
     }
 }
 

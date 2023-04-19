@@ -4,21 +4,34 @@
     /****************************** index.html ******************************/
     
     .container-main-subtitle{
-        grid-template-rows: 5rem 10rem 3rem 7rem 6rem 8rem; 
+        grid-template-rows: 5rem 10rem 3rem 7rem 4.5rem 11rem; 
         grid-template-columns: 18rem;
     }
-
+    
     .container-main-subtitle div:nth-child(7){
         img{
             @include width(16rem);
             @include height(16rem);
+            margin-left: 0.6rem;
         }
     }
 
-    .container-sponsors{
-        padding-right: 1.8rem;
-        grid-template-columns: repeat(2,9.3rem);
+    .sponsors{
+        margin-top: 2rem;
+        padding-right: 3.2rem; 
+        grid-template-columns: repeat(2,8rem);
+        column-gap: 1.6rem;
     }
+    
+    .sponsors li:nth-child(5){
+        a{
+            padding-left: 5.3rem;
+        }
+    }
+
+    .cursos-elegidos h3{
+            font-size: 1.5rem;
+        }
 
     /****************************** nosotros.html ******************************/
 

@@ -88,7 +88,7 @@
     
     .container-main-subtitle{
         margin-top: 6rem;
-        @include grid(center, none, 20rem 26rem, 5rem 7rem 4rem 6rem 6rem 7rem);
+        @include grid(center, none, 20rem 26rem, 5rem 7rem 4rem 6rem 6rem 9rem);
         grid-template-areas: 
         "imagen fst-title"
         "imagen fst-subtitle"
@@ -146,7 +146,7 @@
         }
     }
     
-    .container-sponsors {
+    .sponsors {
         column-gap: 1.7rem;
     }
     
