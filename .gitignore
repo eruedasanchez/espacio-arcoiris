@@ -5,11 +5,11 @@ js/*.map
 js/*.js
 
 # except bootstrap.min.js 
-!bootstrap.min.js
+!bootstrap.min.js 
 
 css/*.map
 css/*.css
-!bootstrap.min.css
+#!bootstrap.min.css  #
 !style.css
 !style-principal-backup.css
 
