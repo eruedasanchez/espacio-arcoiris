@@ -1,6 +1,96 @@
 @media(max-width:374px){
     /* 320px a 374px (Mobile S) */
 
+    /****************************** index.html ******************************/
+    
+    .container-main-subtitle{
+        grid-template-rows: 5rem 10rem 3rem 7rem 6rem 8rem; 
+        grid-template-columns: 18rem;
+    }
+
+    .container-main-subtitle div:nth-child(7){
+        img{
+            @include width(16rem);
+            @include height(16rem);
+        }
+    }
+
+    .container-sponsors{
+        padding-right: 1.8rem;
+        grid-template-columns: repeat(2,9.3rem);
+    }
+
+    /****************************** nosotros.html ******************************/
+
+    .container-nosotros-title h1{
+        font-size: 2rem;
+    }
+    
+    .container-espacio{
+        @include height(68rem);
+        @include grid(none, none, 18rem, 5rem 15rem 22rem 22rem);
+    }
+    
+    .container-unique{
+        @include height(52rem);
+    }
+    
+    .container-unique div:nth-child(2){
+        @include grid(center, none, 10rem, 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem); 
+        padding-top: 1rem;
+        row-gap: 1rem;
+    }
+    
+    .container-unique div:nth-child(2) div:first-child{
+        margin-bottom: 0.01rem;
+        order: 1;
+    }
+    
+    .container-unique div:nth-child(2) div:nth-child(2){
+        @include gridLimitElements(1, 2, 4, 7);
+        margin-bottom: 1rem;
+        order: 2;
+        img{
+            @include gridLimitElements(1, 2, 4, 5);
+        }
+        h4{
+            @include gridLimitElements(1, 2, 5, 6);
+        }
+        h6{
+            @include gridLimitElements(1, 2, 6, 7);
+        }
+    }
+    
+    .container-unique div:nth-child(2) div:nth-child(3){
+        @include gridLimitElements(1, 2, 7, 10);
+        margin-top: 0.5rem;
+        order: 3;
+        img{
+            @include gridLimitElements(1, 2, 7, 8);
+        }
+        h4{
+            @include gridLimitElements(1, 2, 8, 9);
+        }
+        h6{
+            @include gridLimitElements(1, 2, 9, 10);
+        }
+    }
+    
+    .container-unique div:nth-child(2) div:nth-child(4){
+        @include gridLimitElements(1, 2, 10, 13);
+        margin-bottom: 0.01rem;
+        order: 4;
+        img{
+            @include gridLimitElements(1, 2, 10, 11);
+        }
+        h4{
+            @include gridLimitElements(1, 2, 11, 12);
+        }
+        h6{
+            @include gridLimitElements(1, 2, 12, 13);
+        }
+    }
+
     /****************************** taller.html ******************************/
 
     .container-maps{
@@ -20,277 +110,6 @@
     iframe{
         @include width(16rem);
         @include height(20rem);
-    }
-
-    /*
-
-    .container-maps{
-        height: 38rem;
-        display: grid;
-        grid-template-columns: 18.4rem;
-        grid-template-rows: repeat(3,3rem) 12rem repeat(3,3rem) 10rem;
-        grid-template-areas: 
-        "map"
-        "map"
-        "map"
-        "map"
-        "location"
-        "location"
-        "location"
-        "location";
-    }
-
-    iframe{
-        width: 16rem;
-        height: 20rem;
-    }
-    */
-
-
-
-
-    /****************************** nosotros.html ******************************/
-
-    .container-nosotros-title h1{
-        font-size: 2rem;
-    }
-
-    /*
-
-    .container-taller-title h1{
-        font-size: 2rem;
-    }
-    */
-
-    .container-espacio{
-        @include height(68rem);
-        @include grid(none, none, 18rem, 5rem 15rem 22rem 22rem);
-    }
-
-    /*
-
-    .container-espacio{
-        height: 68rem;
-        display: grid;
-        grid-template-columns: 16rem;
-        grid-template-rows: 5rem 15rem 21rem 22rem;
-    }
-
-    */
-
-    .container-unique{
-        @include height(52rem);
-    }
-
-    /*
-    .container-unique{
-        height: 52rem;
-    }
-    */
-
-    .container-unique div:nth-child(2){
-        /* .container-elements */
-        @include grid(center, none, 10rem, 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem); 
-        padding-top: 1rem;
-        row-gap: 1rem;
-    }
-
-    /*
-    
-    .container-elements{
-        display: grid;
-        padding-top: 1rem;
-        grid-template-columns: 10rem;
-        grid-template-rows: 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem; 
-        row-gap: 1rem;
-        justify-content: center;
-    }
-
-    */
-
-    .container-unique div:nth-child(2) div:first-child{
-        /* element-quality */
-        margin-bottom: 0.01rem;
-        order: 1;
-    }
-
-    /*
-    
-    .element-quality{
-        margin-bottom: 0.01rem;
-        order: 1;
-    }
-
-    */
-
-
-    .container-unique div:nth-child(2) div:nth-child(2){
-        /* element-variedad */
-        @include gridLimitElements(1, 2, 4, 7);
-        margin-bottom: 1rem;
-        order: 2;
-        img{
-            @include gridLimitElements(1, 2, 4, 5);
-        }
-        h4{
-            @include gridLimitElements(1, 2, 5, 6);
-        }
-        h6{
-            @include gridLimitElements(1, 2, 6, 7);
-        }
-    }
-
-    /*
-    
-    .element-variedad{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 7;
-        margin-bottom: 1rem;
-        order: 2;
-    }
-
-    .element-variedad img{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-
-    .element-variedad h4{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-
-    .element-variedad h6{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 6;
-        grid-row-end: 7;
-    }
-    */
-
-    .container-unique div:nth-child(2) div:nth-child(3){
-        /* element-client */
-        @include gridLimitElements(1, 2, 7, 10);
-        margin-top: 0.5rem;
-        order: 3;
-        img{
-            @include gridLimitElements(1, 2, 7, 8);
-        }
-        h4{
-            @include gridLimitElements(1, 2, 8, 9);
-        }
-        h6{
-            @include gridLimitElements(1, 2, 9, 10);
-        }
-    }
-
-    /*
-
-    .element-client{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 7;
-        grid-row-end: 10;
-        margin-top: 0.5rem;
-        order: 3;
-    }
-
-    .element-client img{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 7;
-        grid-row-end: 8;
-    }
-
-    .element-client h4{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 8;
-        grid-row-end: 9;
-    }
-
-    .element-client h6{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 9;
-        grid-row-end: 10;
-    }
-    */
-
-    .container-unique div:nth-child(2) div:nth-child(4){
-        /* element-student */
-        @include gridLimitElements(1, 2, 10, 13);
-        margin-bottom: 0.01rem;
-        order: 4;
-        img{
-            @include gridLimitElements(1, 2, 10, 11);
-        }
-        h4{
-            @include gridLimitElements(1, 2, 11, 12);
-        }
-        h6{
-            @include gridLimitElements(1, 2, 12, 13);
-        }
-    }
-
-    /*
-
-    .element-student{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 10;
-        grid-row-end: 13;
-        margin-bottom: 0.01rem;
-        order: 4;
-    }
-
-    .element-student img{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 10;
-        grid-row-end: 11;
-    }
-
-    .element-student h4{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 11;
-        grid-row-end: 12;
-    }
-
-    .element-student h6{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 12;
-        grid-row-end: 13;
-    }
-    */
-
-    /****************************** index.html ******************************/
-
-    /**** subtitulo principal con imagen con borde redondo ****/ 
-
-    .container-main-subtitle{
-        grid-template-rows: 5rem 10rem 3rem 7rem 6rem 8rem; 
-        grid-template-columns: 18rem;
-    }
-
-    .container-main-subtitle div:nth-child(7){
-        img{
-            /* .main-image img */ 
-            @include width(16rem);
-            @include height(16rem);
-        }
-    }
-
-    .container-sponsors{
-        padding-right: 1.8rem;
-        grid-template-columns: repeat(2,9.3rem);
     }
 }
 

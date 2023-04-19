@@ -25,142 +25,37 @@
         }
     }
     
-
-    /*
-    .container-newsletter{
-        height: 13rem;
-        margin-top: 0.5rem;
-        display: grid;
-        grid-template-columns: 28rem;
-        grid-template-rows: 2rem 3rem 2rem 3rem;
-        grid-template-areas: 
-        "recibi"
-        "suscribite"
-        "form"
-        "form"; 
-    }
-
-    .container-newsletter p{
-        grid-area: recibi;                               
-        text-align: center;
-    }
-
-    .container-newsletter h2{
-        grid-area: suscribite;                                
-        text-align: center;
-    }
-
-    .container-newsletter h3{
-        grid-area: form;                                
-    }
-
-    */
-
     .container-information{
         @include width(100%);
         @include height(22rem);
         @include grid(center, none, 22rem 16rem, 5rem repeat(3, 2rem) 5rem repeat(3, 2rem));
     }
-
-    /*
-
-    .container-information{
-        width: 100%;
-        height: 22rem;
-        display: grid;
-        grid-template-columns: 22rem 16rem; 
-        grid-template-rows: 5rem repeat(3, 2rem) 5rem repeat(3, 2rem);
-    }
-
-    */
-
+    
     .container-information div:first-child{
-        /* .footer-taller */
         @include gridLimitElements(1, 2, 1, 5);
         order: 1;     
         h2{
             @include gridLimitElements(1, 2, 1, 2);
         }
         h6:first-child{
-            /* .taller-h6-dir */
             @include gridLimitElements(1, 2, 2, 3);  
         }
         h6:nth-child(2){
-            /* .taller-h6-hor-lv */
             @include gridLimitElements(1, 2, 3, 4);  
         }
         h6:nth-child(3){
-            /* .taller-h6-hor-sat */
             @include gridLimitElements(1, 2, 4, 5);  
         }
     }
-
-    /*
-
-    .footer-taller{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 5;     
-        order: 1;                         
-    }
-
-    .footer-taller h2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .taller-h6-dir{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
-    .taller-h6-hor-lv{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-
-    .taller-h6-hor-sat{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-    */
-
+    
     .container-information div:nth-child(2){
-        /* .footer-sale */
         @include gridLimitElements(2, 3, 1, 5);
         order: 2;
         h2{
             @include gridLimitElements(2, 3, 1, 2);
         }
     }
-
-    /*
-
-    .footer-sale{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 5;     
-        order: 2;                         
-    }
-
-    .footer-sale h2{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    */
-
+    
     .footer-information{
         @include gridLimitElements(1, 2, 5, 9);
         order: 3;  
@@ -170,61 +65,18 @@
     }
 
     .footer-information h6:first-child{
-        /* .information-pagos */
         @include gridLimitElements(1, 2, 6, 7);
     }
 
     .footer-information h6:nth-child(2){
-        /* .information-join */
         @include gridLimitElements(1, 2, 7, 8);
     }
 
     .footer-information h6:nth-child(3){
-        /* .information-estafas */
         @include gridLimitElements(1, 2, 8, 9);
     }
     
-    /*
-
-    .footer-information{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 9;     
-        order: 3;                         
-    }
-
-    .footer-information h2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-
-    .information-pagos{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 6;
-        grid-row-end: 7;
-    }
-
-    .information-join{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 7;
-        grid-row-end: 8;
-    }
-
-    .information-estafas{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 8;
-        grid-row-end: 9;
-    }
-    */
-
     .container-information div:nth-child(4){
-        /* .footer-social-networks */
         @include gridLimitElements(2, 3, 5, 9);
         order: 4; 
         h2{
@@ -232,107 +84,8 @@
         }
     }
 
-    /*
-
-    .footer-social-networks{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 9;     
-        order: 4;                         
-    }
-
-    .footer-social-networks h2{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-    */
-
-    /****************************** taller.html ******************************/
-
-    /* nothing to do */
-
-    /****************************** nosotros.html ******************************/
-
-    .container-espacio{
-        @include height(38rem);
-        @include grid(none, none, 24rem 21rem, 5rem 11rem 15rem);
-        img{
-            @include width(20rem);
-            @include height(24rem);
-            @include padding(3rem, 0, 1rem, 0);
-            align-self: center;
-        }
-    }
-
-
-
-    /*
-    .container-espacio{
-        height: 38rem;
-        display: grid;
-        grid-template-columns: 24rem 21rem;
-        grid-template-rows: 5rem 11rem 15rem;
-    }
-
-    .container-espacio img{
-        width: 20rem;
-        height: 24rem;
-        padding-left: 1rem;
-        padding-top: 3rem;
-        align-self: center;
-    }
-    */
-
-    .container-unique div:first-child{
-        h2{
-            /* .unique-title h2 */
-            padding-right: 0.01rem;
-        }
-    }
-
-    /*
-    .unique-title h2{
-        padding-right: 0.01rem;
-    }
-    */
-
-    .container-unique div:nth-child(2) div:first-child{
-        /* element-quality */
-        margin-bottom: 5rem;
-    }
-
-    .container-unique div:nth-child(2) div:nth-child(2){
-        /* element-variedad */
-        margin-bottom: 7rem;
-    }
-
-    .container-unique div:nth-child(2) div:nth-child(3){
-        /* element-cliente */
-        margin-bottom: 3.5rem;
-    }
-
-    /*
-    .element-quality{
-        margin-bottom: 5rem;
-    }
-
-    .element-variedad{
-        margin-bottom: 6rem;
-    }
-
-    .element-client{
-        margin-bottom: 3.5rem;
-    }
-    */
-
-
     /****************************** index.html ******************************/
-
-    /**** subtitulo principal con imagen con borde redondo ****/ 
-
+    
     .container-main-subtitle{
         margin-top: 6rem;
         @include grid(center, none, 20rem 26rem, 5rem 7rem 4rem 6rem 6rem 7rem);
@@ -347,14 +100,12 @@
 
     .container-main-subtitle div:first-child{
         h2{
-            /* .fst-title h2 */
             font-size: 2rem;
         }
     }
     
     .container-main-subtitle div:nth-child(2){
         h3{
-            /* .fst-subtitle h3 */
             font-size: 1.2rem;
             padding-left: 0.2rem;
         }
@@ -362,14 +113,12 @@
     
     .container-main-subtitle div:nth-child(3){
         h2{
-            /* .snd-title h2 */
             font-size: 2rem;
         }
     }
     
     .container-main-subtitle div:nth-child(4){
         h3{
-            /* .snd-subtitle h3 */
             font-size: 1.2rem;
             padding-left: 0.2rem;
         }
@@ -377,14 +126,12 @@
     
     .container-main-subtitle div:nth-child(5){
         h2{
-            /* .thr-title h2 */
             font-size: 2rem;
         }
     }
     
     .container-main-subtitle div:nth-child(6){
         h3{
-            /* .thr-subtitle h3 */
             font-size: 1.2rem;
             padding-left: 0.2rem;
         }
@@ -392,55 +139,16 @@
     
     .container-main-subtitle div:nth-child(7){
         img{
-            /* .main-image img */ 
             @include width(19rem);
             @include height(19rem);
             border-left: 0.5rem;
             margin-top: 5rem;
         }
     }
-
-    /*
-    .container-main-subtitle{
-        margin-top: 6rem;
-        display: grid;
-        justify-content: center;
-        grid-template-rows: 5rem 7rem 4rem 6rem 6rem 7rem; 
-        grid-template-columns: 20rem 26rem;
-        grid-template-areas: 
-        "image fst-title"
-        "image fst-subtitle"
-        "image snd-title"
-        "image snd-subtitle"
-        "image thr-title"
-        "image thr-subtitle";
-    }
     
-    .fst-title h2, .snd-title h2, .thr-title h2{
-        font-size: 2rem;
-    }
-
-    .fst-subtitle h3, .snd-subtitle h3, .thr-subtitle h3{
-        font-size: 1.2rem;
-        padding-left: 0.2rem;
-    }
-    
-    .main-image img{
-        width: 19rem;
-        height: 19rem;
-        border-left: 0.5rem;
-        margin-top: 7rem;
-    }
-
-    */
-    
-    /*********** sponsors ***********/
-
     .container-sponsors {
         column-gap: 1.7rem;
     }
-
-    /******* cards cursos mas elegidos *******/
     
     .container-cards{
         @include width(100%);
@@ -458,4 +166,39 @@
             font-size: 0.9rem;
         }
     }
+    
+    /****************************** nosotros.html ******************************/
+
+    .container-espacio{
+        @include height(38rem);
+        @include grid(none, none, 24rem 21rem, 5rem 11rem 15rem);
+        img{
+            @include width(20rem);
+            @include height(24rem);
+            @include padding(3rem, 0, 1rem, 0);
+            align-self: center;
+        }
+    }
+    
+    .container-unique div:first-child{
+        h2{
+            padding-right: 0.01rem;
+        }
+    }
+    
+    .container-unique div:nth-child(2) div:first-child{
+        margin-bottom: 5rem;
+    }
+
+    .container-unique div:nth-child(2) div:nth-child(2){
+        margin-bottom: 7rem;
+    }
+
+    .container-unique div:nth-child(2) div:nth-child(3){
+        margin-bottom: 3.5rem;
+    }
+
+    /****************************** taller.html ******************************/
+
+    /* Mantiene la mediaquerie de Desktop (1024px) */
 }
