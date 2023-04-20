@@ -1,13 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
 /*********** reset ***********/
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/* Tipografias del proyecto */
+main {
+  font-family: 'Urbanist', sans-serif; }
+
 body {
   overflow-x: hidden;
   font-family: 'Urbanist', sans-serif; }
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  /* Cambia linea horizontal de boton por circulo */ }
+
+.d-item {
+  height: 490px;
+  /* Largo del contenedor de las imagenes del carousel principal */ }
+  .d-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); }
+
+.carousel-content {
+  margin-top: 7rem; }
+  .carousel-content p, .carousel-content button {
+    color: goldenrod; }
 
 /****************************** header ******************************/
 header {
@@ -164,28 +187,6 @@ footer {
     font-weight: none; }
 
 /****************************** index.html ******************************/
-main {
-  font-family: 'Urbanist', sans-serif; }
-
-.carousel .carousel-indicators button {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  /* Cambia linea horizontal de boton por circulo */ }
-
-.d-item {
-  height: 490px;
-  /* Largo del contenedor de las imagenes del carousel principal */ }
-  .d-item img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.5); }
-
-.carousel-content {
-  margin-top: 7rem; }
-  .carousel-content p, .carousel-content button {
-    color: goldenrod; }
-
 .container-main-subtitle {
   margin-top: 6rem;
   display: grid;

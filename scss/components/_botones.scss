@@ -1,0 +1,5 @@
+.carousel .carousel-indicators button{
+    @include width(10px);
+    @include height(10px);
+    border-radius: 100%;                   /* Cambia linea horizontal de boton por circulo */
+}

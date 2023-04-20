@@ -1,31 +1,5 @@
 /****************************** index.html ******************************/
 
-main{
-    font-family: 'Urbanist', sans-serif;
-}
-
-.carousel .carousel-indicators button{
-    @include width(10px);
-    @include height(10px);
-    border-radius: 100%;                   /* Cambia linea horizontal de boton por circulo */
-}
-
-.d-item{
-    @include height(490px);                                    /* Largo del contenedor de las imagenes del carousel principal */
-    img{
-        @include height(100%);
-        object-fit: cover;
-        filter: brightness(0.5);
-    }
-}
-
-.carousel-content{
-    margin-top: 7rem;
-    p, button{
-        color:  $color-titles;
-    }
-}
-
 .container-main-subtitle{
     margin-top: 6rem;
     @include grid(center, none, 32rem 36rem, 4rem 6rem 4rem 5rem 4rem 6rem);

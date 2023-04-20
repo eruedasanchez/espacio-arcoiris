@@ -1,0 +1,15 @@
+.d-item{
+    @include height(490px);                                    /* Largo del contenedor de las imagenes del carousel principal */
+    img{
+        @include height(100%);
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+}
+
+.carousel-content{
+    margin-top: 7rem;
+    p, button{
+        color:  $color-titles;
+    }
+}
