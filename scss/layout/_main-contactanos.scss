@@ -1,0 +1,91 @@
+.container-contact-title{
+    @extend .container-taller-title;
+}
+
+.container-formulario{
+    display: flex;
+    background-color: white;
+    @include height(54rem);
+    @include width(70%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 1.7rem;
+}
+
+.formulario{
+    padding: 2rem 5rem;
+    @include width(50%);
+    @include flex(column, none, none, none, 0, 0, 0);
+    h2{
+        @include textStyle(2.8rem, $color-titles, none, 600);
+        margin-bottom: 1.8rem;
+    }
+    p{
+        color: $color-subtitles;
+        margin-bottom: 1.9rem;
+    }
+}
+
+label{
+    color: $color-subtitles;
+    margin-bottom: 1rem;
+}
+
+.box{
+    border: 0;
+    background-color: rgb(233, 218, 185);
+    padding: 0.8rem;
+    border-radius: 1.7rem;
+    margin-bottom: 1.7rem;
+    outline: none;
+}
+
+.submit{
+    @include width(12rem);
+    background-color: $color-titles;
+    border: 0;
+    padding: 0.8rem;
+    color: $color-white;
+    border-radius: 25px;
+    margin-top: 1.6rem;
+    box-shadow: 0 0 20px rgb(235, 211, 151);
+}
+
+.informacion{
+    padding: 2rem;
+    img{
+        @include width(18rem);
+        margin-bottom: 3.8rem;
+    }
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.8rem;
+}
+
+.iconos{
+    @include height(2.5rem);
+    display: flex;
+    margin-bottom: 0.02rem;
+    img{
+        @include width(1.4rem);
+        @include height(1.4rem);
+        margin-right: 0.6rem;
+    }
+    p{
+        color: $color-subtitles;
+    }
+}
+
+.social-media{
+    @include flex(none, none, center, none, 0, 0, 0);
+    img{
+        @include width(2.4rem);
+        @include height(2.4rem);
+        margin-right: 2rem;
+    }
+}
