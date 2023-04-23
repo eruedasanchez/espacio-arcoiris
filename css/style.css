@@ -464,9 +464,9 @@ footer {
       padding-top: 0.7rem; }
 
 /****************************** taller.html ******************************/
-.container-taller-title, .container-nosotros-title, .container-promo-title, .container-contact-title {
+.container-taller-title, .container-nosotros-title, .container-promo-title, .container-cursos-title, .container-contact-title {
   height: 5.5rem; }
-  .container-taller-title h1, .container-nosotros-title h1, .container-promo-title h1, .container-contact-title h1 {
+  .container-taller-title h1, .container-nosotros-title h1, .container-promo-title h1, .container-cursos-title h1, .container-contact-title h1 {
     font-size: 2.5rem;
     color: goldenrod;
     text-align: left;
@@ -525,6 +525,7 @@ footer {
     color: goldenrod;
     vertical-align: -8%; }
 
+/****************************** cursos.html ******************************/
 /****************************** capacitaciones-presenciales.html ******************************/
 .container-cap-presencial-title h1 {
   font-size: 1.6rem;
