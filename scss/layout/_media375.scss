@@ -64,4 +64,10 @@
     /****************************** taller.html ******************************/
 
     /* Mantiene la configuracion de Mobile L */
+
+    /****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
+    
+    .container-cards-tienda{
+        @include width(300px);
+    }
 }

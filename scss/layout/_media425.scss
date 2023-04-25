@@ -283,4 +283,20 @@
         "location"
         "location";
     }
+
+    /****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
+    
+    .container-herramientas-title{
+        h1{
+            font-size: 1.4rem;
+        }
+    }
+
+    .container-insumos-title{
+        @extend .container-herramientas-title;
+    }
+
+    .container-cards-tienda{
+        @include width(400px);
+    }
 }

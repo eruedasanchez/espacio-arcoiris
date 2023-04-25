@@ -526,8 +526,8 @@ footer {
     vertical-align: -8%; }
 
 /****************************** cursos.html ******************************/
-/****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
-.container-cap-presencial-title h1 {
+/****************************** capacitaciones-presenciales.html ******************************/
+.container-cap-presencial-title h1, .container-herramientas-title h1, .container-insumos-title h1 {
   font-size: 1.6rem;
   color: goldenrod; }
 
@@ -656,6 +656,8 @@ footer {
     color: black;
     transition-delay: 0.4s; }
 
+/****************************** herramientas.html *****************************/
+/****************************** insumos.html *****************************/
 .container-formulario {
   display: flex;
   background-color: white;
@@ -1060,7 +1062,12 @@ label {
   .container-unique div:nth-child(2) div:nth-child(3) {
     margin-bottom: 3.5rem; }
   /****************************** taller.html ******************************/
-  /* Mantiene la mediaquerie de Desktop (1024px) */ }
+  /* Mantiene la mediaquerie de Desktop (1024px) */
+  /****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
+  .container-cards-tienda {
+    width: 500px;
+    grid-template-columns: 1fr;
+    gap: 1.5rem; } }
 
 @media (max-width: 767px) {
   /* 425px a 767px (Mobile L) */
@@ -1348,7 +1355,12 @@ label {
     align-items: none;
     grid-template-columns: 22rem;
     grid-template-rows: repeat(3, 3rem) 12rem repeat(3, 3rem) 12rem;
-    grid-template-areas: "map" "map" "map" "map" "location" "location" "location" "location"; } }
+    grid-template-areas: "map" "map" "map" "map" "location" "location" "location" "location"; }
+  /****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
+  .container-herramientas-title h1, .container-insumos-title h1 {
+    font-size: 1.4rem; }
+  .container-cards-tienda {
+    width: 400px; } }
 
 @media (max-width: 424px) {
   /* 375px a 424px (Mobile M) */
@@ -1398,7 +1410,10 @@ label {
     column-gap: 1.7rem;
     row-gap: 2rem; }
   /****************************** taller.html ******************************/
-  /* Mantiene la configuracion de Mobile L */ }
+  /* Mantiene la configuracion de Mobile L */
+  /****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
+  .container-cards-tienda {
+    width: 300px; } }
 
 @media (max-width: 374px) {
   /* 320px a 374px (Mobile S) */
