@@ -76,4 +76,16 @@
     background-repeat: $bgdrep;
 }
 
+@mixin transitionDelay($transdelay){
+    transition-delay: $transdelay;
+}
+
+@mixin animation($opacity, $transform, $transition){
+    opacity: $opacity;
+    transform: $transform;
+    transition: $transition;
+}
+
+
+
 

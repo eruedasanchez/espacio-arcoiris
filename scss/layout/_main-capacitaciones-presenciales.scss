@@ -1,4 +1,4 @@
-/****************************** capacitaciones-presenciales.html ******************************/
+/****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
 
 .container-cap-presencial-title h1{
     font-size: 1.6rem;
@@ -6,181 +6,127 @@
 }
 
 .container-cards-tienda{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 940px;
-    gap: 15px;
-    margin: auto;
-    margin-bottom: 30px; 
-    justify-items: center;
-    align-items: center; 
+    @include width(940px);
+    @include grid(center, center, repeat(3,1fr), none);
+    gap: 1.8rem;
+    margin: auto; 
+    margin-bottom: 3rem; 
 }
 
 .card-tienda{
-    height: 300px;
-    width: 300px;
+    @include height(18rem);
+    @include width(300px);
+    @include padding(0.5rem, 0.5rem, 3rem, 3rem);
     overflow: hidden;
     margin: auto;
-    padding: 3px 30px; /* arriba-abajo  - izq-der */
     border-radius: 2%;
     border: 1px solid #fff;
     transition: all .4s ease-in-out;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
     text-align: center;
-    background: linear-gradient(-135deg, #E7A977, #EBBE9B);
-    /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+    background: linear-gradient(360deg, #E7A977, #EBBE9B);
+    &:hover{
+        @include height(32rem);
+        @include width(300px);
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    }
 }
 
-.card-tienda:hover{
-    height: 500px;
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+.card-tienda div:first-child{
+    img{
+        @include height(195px);
+        @include width(195px);
+        position: relative;
+        border-radius: 50%;
+        display: block;                         /* ocupa todo el espacio disponible */ 
+        border-top: 1px solid $color-black;
+        border-bottom: 1px solid $color-black;
+        object-fit: cover;                      /* la imagen se adapta a las medidas que se le pasan */ 
+        margin: 20% auto;
+        transition: all 0.3s ease;
+    }
 }
 
-.card-tienda-image img{
-    position: relative;
-    border-radius: 50%;
-    display: block; /* ocupa todo el espacio disponible */
-    height: 195px;
-    width: 195px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    object-fit: cover; /* la imagen se adapta a las medidas que se le pasan */
-    margin: 20% auto;
-    transition: all 0.3s ease;
-}
-
-.card-tienda-iconos{
+.card-tienda div:nth-child(2){
+    /* iconos */
     display: flex;
     justify-content: center;
     position: relative;
     margin-bottom: 15px;
     list-style: none;
+    li{
+        @include height(40px);
+        @include width(40px);
+        background-color: $color-white;
+        border-radius: 50%;
+        margin: 0 5px;
+        line-height: 40px;
+        text-align: center;
+        transform: scale(0);                   /* inicialmente no se ven */ 
+        transition: all 0.5s ease;
+        a{
+            @include width(100%);
+            @include height(100%);
+            background: #fff;
+            color:  #e6995f;
+            border-radius: 50%;
+            display: block;
+            line-height: 40px;
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 0 0 10px #e6995f;
+            }
+        }
+    }
 }
 
-.card-tienda-iconos li{
-    border-radius: 50%;
-    background-color: #fff;
-    height: 40px;
-    width: 40px;
-    margin: 0 5px;
-    line-height: 40px;
-    text-align: center;
-    transform: scale(0); /* inicialmente no se ven */
-    transition: all 0.5s ease;
+.card-tienda div:nth-child(2) li:first-child{
+    @include transitionDelay(0.2s);
+}
+
+.card-tienda div:nth-child(2) li:nth-child(2){
+    @include transitionDelay(0.3s);
+}
+
+.card-tienda div:nth-child(2) li:nth-child(3){
+    @include transitionDelay(0.4s);
 }
 
 .desplazar{
-    opacity: 0;
-    transition: all .5s ease;
-    transform: translateY(-45px); /* cuando nos posicionamos encima de la tarjeta vuelve a la pos original */
+    @include animation(0, translateY(-45px), all .5s ease);
 }
 
 .agrandar{
-    transform: scale(0);
-    opacity: 0;
-    transition: all .4s none;
+    @include animation(0, scale(0), all .4s none);
 }
 
 .card-tienda:hover .agrandar{
-    opacity: 1;
-    transform: scale(1);
+    @include animation(1, scale(1), none);
 }
 
 .card-tienda:hover .desplazar{
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.card-tienda-iconos li a{
-    color:  #e6995f;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background: #fff;
-    display: block;
-    line-height: 40px;
-    transition: all 0.3s;
-}
-
-.card-tienda-iconos li a:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 10px #e6995f;
-}
-
-.card-tienda-iconos li:first-child{
-    transition-delay: 0.2s;
-}
-
-.card-tienda-iconos li:nth-child(2){
-    transition-delay: 0.3s;
-}
-
-.card-tienda-iconos li:nth-child(3){
-    transition-delay: 0.4s;
-}
-
-.desplazar:first-child{
-    transition-delay: 0.1s;
-}
-
-.desplazar:nth-child(2){
-    transition-delay: 0.2s;
-}
-
-.desplazar:nth-child(3){
-    transition-delay: 0.4s;
-}
-
-.info-personal:first-child{
-    font-size: 20px;
-    padding: 10px;
-    line-height: 25px;
-}
-
-.info-personal:nth-child(2){
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.info-personal:nth-child(3){
-    margin: 15px 0;
-}
-
-.info-personal{
-    color: black;
-}
-
-.card-tienda-acciones{
-    text-align: center;
-    margin-top: 25px;
-}
-
-.botones{
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 0 4px rgba(0,0,0,.2);
-    padding: 8px 15px;
-    font-size: 16px;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background: linear-gradient(90deg, #7579ff, #b224ef); */
-    background: linear-gradient(90deg, #E7A977, #EBBE9B);
-
+    @include animation(1, translateY(0px), none);
 }
 
 
-
-
-
-
-
-
-
-
-
+.card-tienda div:nth-child(3){
+    /* contenido */
+    h4{
+        font-size: 20px;
+        padding: 10px;
+        line-height: 25px;
+        color: $color-black;
+        @include transitionDelay(0.1s);
+    }
+    h3{
+        @include textStyle(22px, $color-black, none, bold);
+        @include transitionDelay(0.2s);
+    }
+    p{
+        margin: 15px 0;
+        color: $color-black;
+        @include transitionDelay(0.4s);
+    }
+}
