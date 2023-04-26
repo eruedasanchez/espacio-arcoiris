@@ -70,4 +70,16 @@
     .container-cards-tienda{
         @include width(300px);
     }
+
+    /**** error404 ****/ 
+
+    .container-error{
+        img{
+            @include width(300px);
+            @include height(300px);
+        }
+        h1{
+            padding-left: 6px;
+        }
+    }
 }

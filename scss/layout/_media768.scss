@@ -209,4 +209,13 @@
         grid-template-columns: 1fr; 
         gap: 1.5rem;
     }
+
+    /****************************** error404 ******************************/
+
+    .container-error{
+        img{
+            @include width(400px);
+            @include height(400px);
+        }
+    }
 }

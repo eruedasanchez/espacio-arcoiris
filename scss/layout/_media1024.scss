@@ -139,6 +139,15 @@
             font-size: 1.3rem;
         }
     }
+
+    /****************************** error404 ******************************/
+
+    .container-error{
+        img{
+            @include width(450px);
+            @include height(450px);
+        }
+    }
 }
 
 

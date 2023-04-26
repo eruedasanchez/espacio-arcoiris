@@ -299,4 +299,20 @@
     .container-cards-tienda{
         @include width(400px);
     }
+
+    /**** error404 ****/ 
+
+    .container-error{
+        img{
+            @include width(350px);
+            @include height(350px);
+        }
+        h1{
+            padding-left: 13px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    
 }

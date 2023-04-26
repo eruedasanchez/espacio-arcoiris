@@ -1,0 +1,11 @@
+.container-error{
+    @include height(100vh);
+    @include flex(column, none, center, center, 20px, none, none);
+    img{
+        @include width(500px);
+        @include height(500px);
+    }
+    h1{
+        @include textStyle(22px, $color-subtitles, none, none);
+    }
+}

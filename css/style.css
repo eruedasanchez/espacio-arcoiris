@@ -45,7 +45,14 @@ nav {
 svg {
   color: black; }
 
-.nav-link:hover, .dropdown-item:hover {
+.nav-item a {
+  font-size: 1rem;
+  color: black;
+  text-align: none;
+  font-weight: none;
+  text-decoration: none; }
+
+.nav-link:hover, .dropdown-item:hover, .nav-item a:hover {
   color: goldenrod !important; }
 
 /****************************** footer ******************************/
@@ -444,29 +451,10 @@ footer {
       text-align: center;
       font-weight: inherit; }
 
-/****************************** promociones.html ******************************/
-.card p span {
-  font-size: 1.36rem;
-  color: red;
-  text-align: none;
-  font-weight: 600;
-  text-decoration: line-through;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0.3rem;
-  padding-right: 0; }
-
-.container-sort {
-  height: 3.5rem; }
-  .container-sort li {
-    list-style: none; }
-    .container-sort li a {
-      padding-top: 0.7rem; }
-
 /****************************** taller.html ******************************/
-.container-taller-title, .container-nosotros-title, .container-promo-title, .container-cursos-title, .container-contact-title {
+.container-taller-title, .container-nosotros-title, .container-cursos-title, .container-contact-title {
   height: 5.5rem; }
-  .container-taller-title h1, .container-nosotros-title h1, .container-promo-title h1, .container-cursos-title h1, .container-contact-title h1 {
+  .container-taller-title h1, .container-nosotros-title h1, .container-cursos-title h1, .container-contact-title h1 {
     font-size: 2.5rem;
     color: goldenrod;
     text-align: left;
@@ -526,6 +514,25 @@ footer {
     vertical-align: -8%; }
 
 /****************************** cursos.html ******************************/
+.container-error {
+  height: 100vh;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  column-gap: none;
+  row-gap: none; }
+  .container-error img {
+    width: 500px;
+    height: 500px; }
+  .container-error h1 {
+    font-size: 22px;
+    color: grey;
+    text-align: none;
+    font-weight: none; }
+
 /****************************** capacitaciones-presenciales.html ******************************/
 .container-cap-presencial-title h1, .container-herramientas-title h1, .container-insumos-title h1 {
   font-size: 1.6rem;
@@ -881,7 +888,11 @@ label {
   .card {
     width: 18rem; }
     .card h4 {
-      font-size: 1.3rem; } }
+      font-size: 1.3rem; }
+  /****************************** error404 ******************************/
+  .container-error img {
+    width: 450px;
+    height: 450px; } }
 
 @media (max-width: 1023px) {
   /* 768px a 1023px (Tablet) */
@@ -1067,7 +1078,11 @@ label {
   .container-cards-tienda {
     width: 500px;
     grid-template-columns: 1fr;
-    gap: 1.5rem; } }
+    gap: 1.5rem; }
+  /****************************** error404 ******************************/
+  .container-error img {
+    width: 400px;
+    height: 400px; } }
 
 @media (max-width: 767px) {
   /* 425px a 767px (Mobile L) */
@@ -1360,7 +1375,15 @@ label {
   .container-herramientas-title h1, .container-insumos-title h1 {
     font-size: 1.4rem; }
   .container-cards-tienda {
-    width: 400px; } }
+    width: 400px; }
+  /**** error404 ****/
+  .container-error img {
+    width: 350px;
+    height: 350px; }
+  .container-error h1 {
+    padding-left: 13px;
+    font-size: 18px;
+    text-align: center; } }
 
 @media (max-width: 424px) {
   /* 375px a 424px (Mobile M) */
@@ -1413,7 +1436,13 @@ label {
   /* Mantiene la configuracion de Mobile L */
   /****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
   .container-cards-tienda {
-    width: 300px; } }
+    width: 300px; }
+  /**** error404 ****/
+  .container-error img {
+    width: 300px;
+    height: 300px; }
+  .container-error h1 {
+    padding-left: 6px; } }
 
 @media (max-width: 374px) {
   /* 320px a 374px (Mobile S) */

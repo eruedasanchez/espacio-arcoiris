@@ -12,8 +12,15 @@ svg{
     color: $color-black;
 }
 
-.nav-link, .dropdown-item{
+.nav-item a{
+    @include textStyle(1rem, $color-black, none, none);
+    text-decoration: none;
+}
+
+.nav-link, .dropdown-item, .nav-item a{
     &:hover{
         color: $color-titles !important;         
     }
 }
+
+
