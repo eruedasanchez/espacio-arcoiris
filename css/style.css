@@ -346,7 +346,7 @@ footer {
   height: 34rem;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../assets/img/index/main/exclusive.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://i.postimg.cc/Px4s3wGt/exclusive.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
