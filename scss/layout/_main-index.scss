@@ -129,7 +129,7 @@
     @include height(34rem);
     display: flex;
     align-items: center; 
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../assets/img/index/main/exclusive-1.jpg"); 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../assets/img/index/main/exclusive.jpg"); 
     @include backgroundStyle(center, cover, no-repeat);
     div{
         h5{
