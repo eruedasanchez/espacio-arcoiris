@@ -218,4 +218,22 @@
             @include height(400px);
         }
     }
+
+    /****************************** login.html ******************************/
+    
+    .imagen-login{
+        display: none;
+    }
+
+    .formulario-login{
+        @include width(100%);
+    }
+    
+    .text-login p{
+        text-align: center;
+    }
+    
+    .text-login h2{
+        text-align: center; 
+    }
 }

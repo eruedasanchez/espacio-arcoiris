@@ -1,0 +1,80 @@
+/****************************** login.html ******************************/
+
+.container-login-title{
+    @extend .container-taller-title;
+}
+
+.container-formulario-login{
+    display: flex;
+    background-color: $color-white;
+    @include height(31rem);
+    @include width(70%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+}
+
+.imagen-login{
+    padding: 2rem;
+    img{
+        @include width(18rem);
+        margin-bottom: 3.8rem;
+    }
+}
+
+.formulario-login{
+    padding: 2rem 2rem;
+    @include width(60%);
+    @include flex(column, none, none, none, 0, 0, 0);
+}
+
+.text-login h2{
+    color: goldenrod;
+}
+
+.text-login p{
+    font-size: 20px;
+    color: $color-subtitles;
+}
+
+.text-login h2{
+    font-size: 40px;
+    text-align: center; 
+}
+
+.entrada label{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: goldenrod;
+}
+
+.entrada input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.pass-forget a{
+    color: $color-subtitles;
+    display: inline-block;
+    margin-top: 0.1px;
+    font-size: 16px;
+
+}
+
+.submit-login{
+    @include width(12rem);
+    background-color: $color-titles;
+    border: 0;
+    padding: 0.8rem;
+    color: $color-white;
+    border-radius: 5px;
+    margin-top: 1.6rem;
+    box-shadow: 0 0 10px rgb(235, 211, 151);
+}
+

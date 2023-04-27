@@ -452,9 +452,9 @@ footer {
       font-weight: inherit; }
 
 /****************************** taller.html ******************************/
-.container-taller-title, .container-nosotros-title, .container-cursos-title, .container-contact-title {
+.container-taller-title, .container-nosotros-title, .container-contact-title, .container-login-title, .container-cursos-title {
   height: 5.5rem; }
-  .container-taller-title h1, .container-nosotros-title h1, .container-cursos-title h1, .container-contact-title h1 {
+  .container-taller-title h1, .container-nosotros-title h1, .container-contact-title h1, .container-login-title h1, .container-cursos-title h1 {
     font-size: 2.5rem;
     color: goldenrod;
     text-align: left;
@@ -512,26 +512,6 @@ footer {
   .whatsapp-ventas span {
     color: goldenrod;
     vertical-align: -8%; }
-
-/****************************** cursos.html ******************************/
-.container-error {
-  height: 100vh;
-  display: flex;
-  flex-wrap: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  column-gap: none;
-  row-gap: none; }
-  .container-error img {
-    width: 500px;
-    height: 500px; }
-  .container-error h1 {
-    font-size: 22px;
-    color: grey;
-    text-align: none;
-    font-weight: none; }
 
 /****************************** capacitaciones-presenciales.html ******************************/
 .container-cap-presencial-title h1, .container-herramientas-title h1, .container-insumos-title h1 {
@@ -663,8 +643,6 @@ footer {
     color: black;
     transition-delay: 0.4s; }
 
-/****************************** herramientas.html *****************************/
-/****************************** insumos.html *****************************/
 .container-formulario {
   display: flex;
   background-color: white;
@@ -755,6 +733,98 @@ label {
     height: 2.4rem;
     margin-right: 2rem; }
 
+/****************************** login.html ******************************/
+.container-formulario-login {
+  display: flex;
+  background-color: white;
+  height: 31rem;
+  width: 70%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 0.5rem; }
+
+.imagen-login {
+  padding: 2rem; }
+  .imagen-login img {
+    width: 18rem;
+    margin-bottom: 3.8rem; }
+
+.formulario-login {
+  padding: 2rem 2rem;
+  width: 60%;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 0;
+  column-gap: 0;
+  row-gap: 0; }
+
+.text-login h2 {
+  color: goldenrod; }
+
+.text-login p {
+  font-size: 20px;
+  color: grey; }
+
+.text-login h2 {
+  font-size: 40px;
+  text-align: center; }
+
+.entrada label {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: goldenrod; }
+
+.entrada input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 5px;
+  outline: none; }
+
+.pass-forget a {
+  color: grey;
+  display: inline-block;
+  margin-top: 0.1px;
+  font-size: 16px; }
+
+.submit-login {
+  width: 12rem;
+  background-color: goldenrod;
+  border: 0;
+  padding: 0.8rem;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1.6rem;
+  box-shadow: 0 0 10px #ebd397; }
+
+.container-error {
+  height: 100vh;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  column-gap: none;
+  row-gap: none; }
+  .container-error img {
+    width: 500px;
+    height: 500px; }
+  .container-error h1 {
+    font-size: 22px;
+    color: grey;
+    text-align: none;
+    font-weight: none; }
+
+/****************************** cursos.html ******************************/
+/****************************** herramientas.html *****************************/
+/****************************** insumos.html *****************************/
 @media (max-width: 1439px) {
   /* 1024px a 1439px (Laptop) */
   /****************************** footer ******************************/
@@ -1082,7 +1152,16 @@ label {
   /****************************** error404 ******************************/
   .container-error img {
     width: 400px;
-    height: 400px; } }
+    height: 400px; }
+  /****************************** login.html ******************************/
+  .imagen-login {
+    display: none; }
+  .formulario-login {
+    width: 100%; }
+  .text-login p {
+    text-align: center; }
+  .text-login h2 {
+    text-align: center; } }
 
 @media (max-width: 767px) {
   /* 425px a 767px (Mobile L) */
@@ -1383,7 +1462,11 @@ label {
   .container-error h1 {
     padding-left: 13px;
     font-size: 18px;
-    text-align: center; } }
+    text-align: center; }
+  /****************************** login.html ******************************/
+  .container-formulario-login {
+    height: 33rem;
+    width: 90%; } }
 
 @media (max-width: 424px) {
   /* 375px a 424px (Mobile M) */

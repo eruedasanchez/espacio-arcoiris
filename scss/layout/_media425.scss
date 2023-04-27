@@ -314,5 +314,10 @@
         }
     }
 
+    /****************************** login.html ******************************/
     
+    .container-formulario-login{
+        @include height(33rem);
+        @include width(90%);
+    }
 }
