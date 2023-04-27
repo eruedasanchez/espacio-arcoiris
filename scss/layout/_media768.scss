@@ -229,11 +229,7 @@
         @include width(100%);
     }
     
-    .text-login p{
+    .text-login p, .text-login h2{
         text-align: center;
-    }
-    
-    .text-login h2{
-        text-align: center; 
     }
 }

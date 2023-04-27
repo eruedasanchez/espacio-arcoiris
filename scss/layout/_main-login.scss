@@ -30,41 +30,36 @@
     @include flex(column, none, none, none, 0, 0, 0);
 }
 
-.text-login h2{
-    color: goldenrod;
+.formulario-login div:first-child{
+    h2{
+        @include textStyle(40px, $color-titles, center, none);
+    }
+    p{
+        @include textStyle(20px, $color-subtitles, none, none);
+    }
 }
 
-.text-login p{
-    font-size: 20px;
-    color: $color-subtitles;
+.formulario-login div:nth-child(2), .formulario-login div:nth-child(3){
+    label{
+        display: block;
+        @include textStyle(22px, $color-titles, none, bold);
+        margin: 8px 0;
+    }
+    input{
+        @include width(100%);
+        padding: 10px 16px;
+        border-radius: 5px;
+        outline: none;
+    }
 }
 
-.text-login h2{
-    font-size: 40px;
-    text-align: center; 
-}
-
-.entrada label{
-    display: block;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 8px 0;
-    color: goldenrod;
-}
-
-.entrada input{
-    width: 100%;
-    padding: 10px 16px;
-    border-radius: 5px;
-    outline: none;
-}
-
-.pass-forget a{
-    color: $color-subtitles;
-    display: inline-block;
-    margin-top: 0.1px;
-    font-size: 16px;
-
+.formulario-login div:nth-child(4){
+    a{
+        @include textStyle(16px, $color-subtitles, none, none);
+        display: inline-block;
+        margin-top: 0.1px;
+    }
+    
 }
 
 .submit-login{

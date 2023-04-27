@@ -763,35 +763,39 @@ label {
   column-gap: 0;
   row-gap: 0; }
 
-.text-login h2 {
-  color: goldenrod; }
-
-.text-login p {
-  font-size: 20px;
-  color: grey; }
-
-.text-login h2 {
+.formulario-login div:first-child h2 {
   font-size: 40px;
-  text-align: center; }
+  color: goldenrod;
+  text-align: center;
+  font-weight: none; }
 
-.entrada label {
+.formulario-login div:first-child p {
+  font-size: 20px;
+  color: grey;
+  text-align: none;
+  font-weight: none; }
+
+.formulario-login div:nth-child(2) label, .formulario-login div:nth-child(3) label {
   display: block;
   font-size: 22px;
+  color: goldenrod;
+  text-align: none;
   font-weight: bold;
-  margin: 8px 0;
-  color: goldenrod; }
+  margin: 8px 0; }
 
-.entrada input {
+.formulario-login div:nth-child(2) input, .formulario-login div:nth-child(3) input {
   width: 100%;
   padding: 10px 16px;
   border-radius: 5px;
   outline: none; }
 
-.pass-forget a {
+.formulario-login div:nth-child(4) a {
+  font-size: 16px;
   color: grey;
+  text-align: none;
+  font-weight: none;
   display: inline-block;
-  margin-top: 0.1px;
-  font-size: 16px; }
+  margin-top: 0.1px; }
 
 .submit-login {
   width: 12rem;
@@ -1158,9 +1162,7 @@ label {
     display: none; }
   .formulario-login {
     width: 100%; }
-  .text-login p {
-    text-align: center; }
-  .text-login h2 {
+  .text-login p, .text-login h2 {
     text-align: center; } }
 
 @media (max-width: 767px) {
