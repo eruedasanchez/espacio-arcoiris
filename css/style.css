@@ -654,14 +654,14 @@ footer {
   transition: none; }
 
 .card-tienda div:nth-child(3) {
-  /* contenido */ }
-  .card-tienda div:nth-child(3) h4 {
+  /* contenido de la card */ }
+  .card-tienda div:nth-child(3) h3 {
     font-size: 20px;
     padding: 10px;
     line-height: 25px;
     color: black;
     transition-delay: 0.1s; }
-  .card-tienda div:nth-child(3) h3 {
+  .card-tienda div:nth-child(3) h4 {
     font-size: 22px;
     color: black;
     text-align: none;

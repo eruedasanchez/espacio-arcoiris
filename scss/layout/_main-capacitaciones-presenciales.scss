@@ -112,15 +112,15 @@
 
 
 .card-tienda div:nth-child(3){
-    /* contenido */
-    h4{
+    /* contenido de la card */
+    h3{
         font-size: 20px;
         padding: 10px;
         line-height: 25px;
         color: $color-black;
         @include transitionDelay(0.1s);
     }
-    h3{
+    h4{
         @include textStyle(22px, $color-black, none, bold);
         @include transitionDelay(0.2s);
     }
