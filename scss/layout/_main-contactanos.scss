@@ -65,8 +65,22 @@ label{
     display: flex;
     flex-direction: column;
     margin-bottom: 2.8rem;
+    div{
+        @include height(2.5rem);
+        display: flex;
+        margin-bottom: 0.02rem;
+        img{
+            @include width(1.4rem);
+            @include height(1.4rem);
+            margin-right: 0.6rem;
+        }
+        p{
+            color: $color-subtitles;
+        }
+    }
 }
 
+/*
 .iconos{
     @include height(2.5rem);
     display: flex;
@@ -80,6 +94,7 @@ label{
         color: $color-subtitles;
     }
 }
+*/
 
 .social-media{
     @include flex(none, none, center, none, 0, 0, 0);

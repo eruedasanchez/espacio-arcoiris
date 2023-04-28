@@ -89,4 +89,12 @@
         @include height(42rem);
         flex-direction: column;
     }
+    
+    .container-contact-title h1{
+        font-size: 2rem;
+    }
+
+    .container-formulario{
+        margin-top: 2rem;
+    }
 }

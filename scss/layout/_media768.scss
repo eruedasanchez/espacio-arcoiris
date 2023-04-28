@@ -238,4 +238,21 @@
     .container-ayuda{
         @include height(32rem);
     }
+
+    /****************************** contactanos.html ******************************/
+
+    .informacion{
+        display: none;
+    }
+    
+    .formulario{
+        @include width(100%);
+    }
+
+    .submit{
+        justify-self: center;
+        align-self: center;
+    }
+
+
 }

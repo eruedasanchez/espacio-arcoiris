@@ -334,4 +334,17 @@
             font-size: 26px;
         }
     }
+
+    /****************************** contactanos.html ******************************/
+
+    .container-formulario{
+        @include width(95%);
+    }
+
+    .formulario{
+        padding: 2rem 1rem;
+        h2{
+            text-align: center;
+        }
+    }
 }

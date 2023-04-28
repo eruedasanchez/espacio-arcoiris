@@ -488,9 +488,9 @@ footer {
       font-weight: inherit; }
 
 /****************************** taller.html ******************************/
-.container-taller-title, .container-nosotros-title, .container-contact-title, .container-login-title, .container-cursos-title {
+.container-taller-title, .container-nosotros-title, .container-contact-title, .container-login-title, .container-ayuda-title, .container-cursos-title {
   height: 5.5rem; }
-  .container-taller-title h1, .container-nosotros-title h1, .container-contact-title h1, .container-login-title h1, .container-cursos-title h1 {
+  .container-taller-title h1, .container-nosotros-title h1, .container-contact-title h1, .container-login-title h1, .container-ayuda-title h1, .container-cursos-title h1 {
     font-size: 2.5rem;
     color: goldenrod;
     text-align: left;
@@ -744,18 +744,32 @@ label {
   display: flex;
   flex-direction: column;
   margin-bottom: 2.8rem; }
+  .ubicacion div {
+    height: 2.5rem;
+    display: flex;
+    margin-bottom: 0.02rem; }
+    .ubicacion div img {
+      width: 1.4rem;
+      height: 1.4rem;
+      margin-right: 0.6rem; }
+    .ubicacion div p {
+      color: grey; }
 
-.iconos {
-  height: 2.5rem;
-  display: flex;
-  margin-bottom: 0.02rem; }
-  .iconos img {
-    width: 1.4rem;
-    height: 1.4rem;
-    margin-right: 0.6rem; }
-  .iconos p {
-    color: grey; }
-
+/*
+.iconos{
+    @include height(2.5rem);
+    display: flex;
+    margin-bottom: 0.02rem;
+    img{
+        @include width(1.4rem);
+        @include height(1.4rem);
+        margin-right: 0.6rem;
+    }
+    p{
+        color: $color-subtitles;
+    }
+}
+*/
 .social-media {
   display: flex;
   flex-wrap: none;
@@ -844,7 +858,7 @@ label {
   margin-top: 1.6rem;
   box-shadow: 0 0 10px #ebd397; }
 
-/****************************** login.html ******************************/
+/****************************** help.html ******************************/
 .container-ayuda {
   display: flex;
   height: 38rem;
@@ -1256,7 +1270,15 @@ label {
     text-align: center; }
   /****************************** help.html ******************************/
   .container-ayuda {
-    height: 32rem; } }
+    height: 32rem; }
+  /****************************** contactanos.html ******************************/
+  .informacion {
+    display: none; }
+  .formulario {
+    width: 100%; }
+  .submit {
+    justify-self: center;
+    align-self: center; } }
 
 @media (max-width: 767px) {
   /* 425px a 767px (Mobile L) */
@@ -1567,7 +1589,14 @@ label {
   .informacion-ayuda {
     margin-top: 0.3rem; }
   .informacion-ayuda div:nth-child(2) h2 {
-    font-size: 26px; } }
+    font-size: 26px; }
+  /****************************** contactanos.html ******************************/
+  .container-formulario {
+    width: 95%; }
+  .formulario {
+    padding: 2rem 1rem; }
+    .formulario h2 {
+      text-align: center; } }
 
 @media (max-width: 424px) {
   /* 375px a 424px (Mobile M) */
@@ -1630,7 +1659,11 @@ label {
   /****************************** help.html ******************************/
   .container-ayuda {
     height: 42rem;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .container-contact-title h1 {
+    font-size: 2rem; }
+  .container-formulario {
+    margin-top: 2rem; } }
 
 @media (max-width: 374px) {
   /* 320px a 374px (Mobile S) */
@@ -1756,4 +1789,7 @@ label {
   .container-ayuda {
     height: 44rem; }
   .informacion-ayuda div:nth-child(2) h2 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  /****************************** contactanos.html ******************************/
+  .container-contact-title h1 {
+    font-size: 1.8rem; } }
