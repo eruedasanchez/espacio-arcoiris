@@ -22,18 +22,20 @@
         @include gridLimitElements(2, 3, 1, 4);
         padding-left: 8rem;
     }
-    h3{
+    h2{
         @include textStyle(3rem, $color-titles, none, none);
         @include gridLimitElements(1, 2, 1, 2);
     }
-    h5{
-        @include gridLimitElements(1, 2, 2, 3);
-        @include textStyle(1.25rem, $color-subtitles, center, inherit);
-    }
-    h6{
-        @include gridLimitElements(1, 2, 3, 4);
-        @include textStyle(1.25rem, $color-subtitles, center, inherit);
-    }
+}
+
+.container-espacio p:first-child{
+    @include gridLimitElements(1, 2, 2, 3);
+    @include textStyle(1.2rem, $color-subtitles, none, inherit);
+}
+
+.container-espacio p:nth-child(2){
+    @include gridLimitElements(1, 2, 3, 4);
+    @include textStyle(1.2rem, $color-subtitles, none, inherit);
 }
 
 .container-unique{
@@ -53,7 +55,10 @@
     gap: 5rem;
     div{
         @include flex(column, none, center, center, 0, 0, 0);
-        h6{
+        h3{
+            @include textStyle(1.5rem, black, center, inherit);
+        }
+        p{
             @include textStyle(1rem, $color-subtitles, center, inherit);
         }
     }

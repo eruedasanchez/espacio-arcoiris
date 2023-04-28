@@ -46,7 +46,7 @@
 
     .container-espacio{
         @include height(64rem);
-        @include grid(none, none, 20rem, 5rem 12rem 21rem 22rem);
+        @include grid(none, none, 20rem, 5rem 14rem 21rem 22rem);
         padding-top: 0.5rem;
         img{
             @include width(18rem);

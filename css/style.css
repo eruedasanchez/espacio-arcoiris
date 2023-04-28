@@ -426,7 +426,7 @@ footer {
     grid-row-start: 1;
     grid-row-end: 4;
     padding-left: 8rem; }
-  .container-espacio h3 {
+  .container-espacio h2 {
     font-size: 3rem;
     color: goldenrod;
     text-align: none;
@@ -435,24 +435,26 @@ footer {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2; }
-  .container-espacio h5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-size: 1.25rem;
-    color: grey;
-    text-align: center;
-    font-weight: inherit; }
-  .container-espacio h6 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    font-size: 1.25rem;
-    color: grey;
-    text-align: center;
-    font-weight: inherit; }
+
+.container-espacio p:first-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 1.2rem;
+  color: grey;
+  text-align: none;
+  font-weight: inherit; }
+
+.container-espacio p:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-size: 1.2rem;
+  color: grey;
+  text-align: none;
+  font-weight: inherit; }
 
 .container-unique {
   height: 15rem; }
@@ -474,7 +476,12 @@ footer {
     gap: 0;
     column-gap: 0;
     row-gap: 0; }
-    .container-unique div:nth-child(2) div h6 {
+    .container-unique div:nth-child(2) div h3 {
+      font-size: 1.5rem;
+      color: black;
+      text-align: center;
+      font-weight: inherit; }
+    .container-unique div:nth-child(2) div p {
       font-size: 1rem;
       color: grey;
       text-align: center;
@@ -1015,14 +1022,12 @@ label {
       width: 24rem;
       height: 30rem;
       padding-left: 1rem; }
-    .container-espacio h5, .container-espacio h6 {
-      text-align: left; }
   .container-unique {
     height: 20rem; }
   .container-unique div:nth-child(2) {
     padding-top: 1rem;
     gap: 4rem; }
-    .container-unique div:nth-child(2) div h4, .container-unique div:nth-child(2) div h6 {
+    .container-unique div:nth-child(2) div h3, .container-unique div:nth-child(2) div p {
       text-align: center; }
   .container-unique div:nth-child(2) div:first-child {
     margin-bottom: 2.8rem; }
@@ -1417,7 +1422,7 @@ label {
     justify-content: none;
     align-items: none;
     grid-template-columns: 22rem;
-    grid-template-rows: 5rem 10rem 18rem 25rem; }
+    grid-template-rows: 5rem 12rem 18rem 25rem; }
     .container-espacio img {
       width: 22rem;
       height: 26rem;
@@ -1426,8 +1431,6 @@ label {
       grid-row-start: 4;
       grid-row-end: 5;
       padding-left: 1rem; }
-    .container-espacio h3, .container-espacio h5, .container-espacio h6 {
-      text-align: center; }
   .container-unique {
     height: 35rem; }
   .container-unique div:nth-child(2) {
@@ -1452,12 +1455,12 @@ label {
       grid-row-start: 1;
       grid-row-end: 2;
       justify-self: center; }
-    .container-unique div:nth-child(2) div:first-child h4 {
+    .container-unique div:nth-child(2) div:first-child h3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 3; }
-    .container-unique div:nth-child(2) div:first-child h6 {
+    .container-unique div:nth-child(2) div:first-child p {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 3;
@@ -1475,12 +1478,12 @@ label {
       grid-row-start: 1;
       grid-row-end: 2;
       justify-self: center; }
-    .container-unique div:nth-child(2) div:nth-child(2) h4 {
+    .container-unique div:nth-child(2) div:nth-child(2) h3 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3; }
-    .container-unique div:nth-child(2) div:nth-child(2) h6 {
+    .container-unique div:nth-child(2) div:nth-child(2) p {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 3;
@@ -1498,12 +1501,12 @@ label {
       grid-row-start: 4;
       grid-row-end: 5;
       justify-self: center; }
-    .container-unique div:nth-child(2) div:nth-child(3) h4 {
+    .container-unique div:nth-child(2) div:nth-child(3) h3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 5;
       grid-row-end: 6; }
-    .container-unique div:nth-child(2) div:nth-child(3) h6 {
+    .container-unique div:nth-child(2) div:nth-child(3) p {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 6;
@@ -1520,12 +1523,12 @@ label {
       grid-row-start: 4;
       grid-row-end: 5;
       justify-self: center; }
-    .container-unique div:nth-child(2) div:nth-child(4) h4 {
+    .container-unique div:nth-child(2) div:nth-child(4) h3 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 5;
       grid-row-end: 6; }
-    .container-unique div:nth-child(2) div:nth-child(4) h6 {
+    .container-unique div:nth-child(2) div:nth-child(4) p {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 6;
@@ -1599,7 +1602,7 @@ label {
     justify-content: none;
     align-items: none;
     grid-template-columns: 20rem;
-    grid-template-rows: 5rem 12rem 21rem 22rem;
+    grid-template-rows: 5rem 14rem 21rem 22rem;
     padding-top: 0.5rem; }
     .container-espacio img {
       width: 18rem;
@@ -1656,15 +1659,15 @@ label {
     justify-content: none;
     align-items: none;
     grid-template-columns: 18rem;
-    grid-template-rows: 5rem 15rem 22rem 22rem; }
+    grid-template-rows: 5rem 15rem 26rem 20rem; }
   .container-unique {
-    height: 52rem; }
+    height: 62rem; }
   .container-unique div:nth-child(2) {
     display: grid;
     justify-content: center;
     align-items: none;
     grid-template-columns: 10rem;
-    grid-template-rows: 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem;
+    grid-template-rows: 5rem 4rem 3rem 4rem 4rem 3rem 5rem 4rem 3rem 5rem 4rem 3rem;
     padding-top: 1rem;
     row-gap: 1rem; }
   .container-unique div:nth-child(2) div:first-child {
@@ -1675,19 +1678,19 @@ label {
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 7;
-    margin-bottom: 1rem;
+    margin-top: 0.01rem;
     order: 2; }
     .container-unique div:nth-child(2) div:nth-child(2) img {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 4;
       grid-row-end: 5; }
-    .container-unique div:nth-child(2) div:nth-child(2) h4 {
+    .container-unique div:nth-child(2) div:nth-child(2) h3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 5;
       grid-row-end: 6; }
-    .container-unique div:nth-child(2) div:nth-child(2) h6 {
+    .container-unique div:nth-child(2) div:nth-child(2) p {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 6;
@@ -1697,19 +1700,19 @@ label {
     grid-column-end: 2;
     grid-row-start: 7;
     grid-row-end: 10;
-    margin-top: 0.5rem;
+    margin-top: 0.01rem;
     order: 3; }
     .container-unique div:nth-child(2) div:nth-child(3) img {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 7;
       grid-row-end: 8; }
-    .container-unique div:nth-child(2) div:nth-child(3) h4 {
+    .container-unique div:nth-child(2) div:nth-child(3) h3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 8;
       grid-row-end: 9; }
-    .container-unique div:nth-child(2) div:nth-child(3) h6 {
+    .container-unique div:nth-child(2) div:nth-child(3) p {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 9;
@@ -1719,19 +1722,19 @@ label {
     grid-column-end: 2;
     grid-row-start: 10;
     grid-row-end: 13;
-    margin-bottom: 0.01rem;
+    margin-top: 0.01rem;
     order: 4; }
     .container-unique div:nth-child(2) div:nth-child(4) img {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 10;
       grid-row-end: 11; }
-    .container-unique div:nth-child(2) div:nth-child(4) h4 {
+    .container-unique div:nth-child(2) div:nth-child(4) h3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 11;
       grid-row-end: 12; }
-    .container-unique div:nth-child(2) div:nth-child(4) h6 {
+    .container-unique div:nth-child(2) div:nth-child(4) p {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 12;

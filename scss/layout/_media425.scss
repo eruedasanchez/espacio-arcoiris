@@ -182,15 +182,12 @@
     
     .container-espacio{
         @include height(66rem);
-        @include grid(none, none, 22rem, 5rem 10rem 18rem 25rem);
+        @include grid(none, none, 22rem, 5rem 12rem 18rem 25rem);
         img{
             @include width(22rem);
             @include height(26rem);
             @include gridLimitElements(1, 2, 4, 5);
             padding-left: 1rem;
-        }
-        h3, h5, h6{
-            text-align: center;
         }
     }
     
@@ -213,10 +210,10 @@
             @include gridLimitElements(1, 2, 1, 2);
             justify-self: center;
         }
-        h4{
+        h3{
             @include gridLimitElements(1, 2, 2, 3);
         }
-        h6{
+        p{
             @include gridLimitElements(1, 2, 3, 4);
         }
     }
@@ -229,10 +226,10 @@
             @include gridLimitElements(2, 3, 1, 2);
             justify-self: center;
         }
-        h4{
+        h3{
             @include gridLimitElements(2, 3, 2, 3);
         }
-        h6{
+        p{
             @include gridLimitElements(2, 3, 3, 4);
         }
     }
@@ -245,10 +242,10 @@
             @include gridLimitElements(1, 2, 4, 5);
             justify-self: center;
         }
-        h4{
+        h3{
             @include gridLimitElements(1, 2, 5, 6);
         }
-        h6{
+        p{
             @include gridLimitElements(1, 2, 6, 7);
         }
     }
@@ -260,10 +257,10 @@
             @include gridLimitElements(2, 3, 4, 5);
             justify-self: center;
         }
-        h4{
+        h3{
             @include gridLimitElements(2, 3, 5, 6);
         }
-        h6{
+        p{
             @include gridLimitElements(1, 2, 6, 7);
         }
     }

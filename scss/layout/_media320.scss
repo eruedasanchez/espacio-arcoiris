@@ -41,15 +41,15 @@
     
     .container-espacio{
         @include height(68rem);
-        @include grid(none, none, 18rem, 5rem 15rem 22rem 22rem);
+        @include grid(none, none, 18rem, 5rem 15rem 26rem 20rem);
     }
     
     .container-unique{
-        @include height(52rem);
+        @include height(62rem);
     }
     
     .container-unique div:nth-child(2){
-        @include grid(center, none, 10rem, 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem 4rem 3rem 2rem); 
+        @include grid(center, none, 10rem, 5rem 4rem 3rem 4rem 4rem 3rem 5rem 4rem 3rem 5rem 4rem 3rem); 
         padding-top: 1rem;
         row-gap: 1rem;
     }
@@ -61,45 +61,45 @@
     
     .container-unique div:nth-child(2) div:nth-child(2){
         @include gridLimitElements(1, 2, 4, 7);
-        margin-bottom: 1rem;
+        margin-top: 0.01rem;
         order: 2;
         img{
             @include gridLimitElements(1, 2, 4, 5);
         }
-        h4{
+        h3{
             @include gridLimitElements(1, 2, 5, 6);
         }
-        h6{
+        p{
             @include gridLimitElements(1, 2, 6, 7);
         }
     }
     
     .container-unique div:nth-child(2) div:nth-child(3){
         @include gridLimitElements(1, 2, 7, 10);
-        margin-top: 0.5rem;
+        margin-top: 0.01rem;
         order: 3;
         img{
             @include gridLimitElements(1, 2, 7, 8);
         }
-        h4{
+        h3{
             @include gridLimitElements(1, 2, 8, 9);
         }
-        h6{
+        p{
             @include gridLimitElements(1, 2, 9, 10);
         }
     }
     
     .container-unique div:nth-child(2) div:nth-child(4){
         @include gridLimitElements(1, 2, 10, 13);
-        margin-bottom: 0.01rem;
+        margin-top: 0.01rem;
         order: 4;
         img{
             @include gridLimitElements(1, 2, 10, 11);
         }
-        h4{
+        h3{
             @include gridLimitElements(1, 2, 11, 12);
         }
-        h6{
+        p{
             @include gridLimitElements(1, 2, 12, 13);
         }
     }

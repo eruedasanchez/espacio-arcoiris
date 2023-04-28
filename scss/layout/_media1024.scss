@@ -85,9 +85,6 @@
             @include height(30rem);
             padding-left: 1rem;
         }
-        h5, h6{
-            text-align: left;
-        }
     }
     
     .container-unique{
@@ -98,7 +95,7 @@
         padding-top: 1rem;
         gap: 4rem;
         div{
-            h4, h6{
+            h3, p{
                 text-align: center;
             }
         }
