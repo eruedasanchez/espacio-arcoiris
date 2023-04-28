@@ -320,4 +320,21 @@
         @include height(33rem);
         @include width(90%);
     }
+
+    /****************************** help.html ******************************/
+    
+    .container-ayuda{
+        @include height(44rem);
+        flex-direction: column;
+    }
+    
+    .informacion-ayuda{
+        margin-top: 0.3rem;
+    }
+    
+    .informacion-ayuda div:nth-child(2){
+        h2{
+            font-size: 26px;
+        }
+    }
 }

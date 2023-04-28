@@ -807,6 +807,58 @@ label {
   margin-top: 1.6rem;
   box-shadow: 0 0 10px #ebd397; }
 
+/****************************** login.html ******************************/
+.container-ayuda {
+  display: flex;
+  height: 38rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem; }
+
+.lista-ayuda {
+  flex: 0 0 calc(30%);
+  margin-top: 1.5rem;
+  margin-left: 2rem; }
+  .lista-ayuda li {
+    list-style: none;
+    margin-bottom: 0.6rem; }
+    .lista-ayuda li a {
+      font-size: 18px;
+      color: grey;
+      text-align: none;
+      font-weight: none;
+      text-decoration: none; }
+      .lista-ayuda li a:hover {
+        color: goldenrod !important; }
+
+.informacion-ayuda {
+  margin-top: 1.5rem; }
+
+.informacion-ayuda div:first-child img {
+  height: 100%;
+  width: 100%; }
+
+.informacion-ayuda div:nth-child(2) h2 {
+  font-size: 22px;
+  color: goldenrod;
+  text-align: none;
+  font-weight: none;
+  margin-top: 1rem; }
+
+.informacion-ayuda div:nth-child(2) p {
+  color: grey; }
+  .informacion-ayuda div:nth-child(2) p a {
+    color: goldenrod; }
+
+.informacion-ayuda div:nth-child(3) a {
+  text-decoration: none; }
+  .informacion-ayuda div:nth-child(3) a img {
+    height: 24px;
+    width: 24px; }
+  .informacion-ayuda div:nth-child(3) a span {
+    color: goldenrod;
+    padding-left: 0.4rem; }
+
 .container-error {
   height: 100vh;
   display: flex;
@@ -966,7 +1018,10 @@ label {
   /****************************** error404 ******************************/
   .container-error img {
     width: 450px;
-    height: 450px; } }
+    height: 450px; }
+  /****************************** help.html ******************************/
+  .container-ayuda {
+    height: 34rem; } }
 
 @media (max-width: 1023px) {
   /* 768px a 1023px (Tablet) */
@@ -1163,7 +1218,10 @@ label {
   .formulario-login {
     width: 100%; }
   .text-login p, .text-login h2 {
-    text-align: center; } }
+    text-align: center; }
+  /****************************** help.html ******************************/
+  .container-ayuda {
+    height: 32rem; } }
 
 @media (max-width: 767px) {
   /* 425px a 767px (Mobile L) */
@@ -1468,7 +1526,15 @@ label {
   /****************************** login.html ******************************/
   .container-formulario-login {
     height: 33rem;
-    width: 90%; } }
+    width: 90%; }
+  /****************************** help.html ******************************/
+  .container-ayuda {
+    height: 44rem;
+    flex-direction: column; }
+  .informacion-ayuda {
+    margin-top: 0.3rem; }
+  .informacion-ayuda div:nth-child(2) h2 {
+    font-size: 26px; } }
 
 @media (max-width: 424px) {
   /* 375px a 424px (Mobile M) */
@@ -1527,7 +1593,11 @@ label {
     width: 300px;
     height: 300px; }
   .container-error h1 {
-    padding-left: 6px; } }
+    padding-left: 6px; }
+  /****************************** help.html ******************************/
+  .container-ayuda {
+    height: 42rem;
+    flex-direction: column; } }
 
 @media (max-width: 374px) {
   /* 320px a 374px (Mobile S) */
@@ -1648,4 +1718,9 @@ label {
     grid-template-areas: "map" "map" "map" "map" "location" "location" "location" "location"; }
   iframe {
     width: 16rem;
-    height: 20rem; } }
+    height: 20rem; }
+  /****************************** help.html ******************************/
+  .container-ayuda {
+    height: 44rem; }
+  .informacion-ayuda div:nth-child(2) h2 {
+    font-size: 22px; } }

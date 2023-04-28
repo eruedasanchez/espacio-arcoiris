@@ -82,4 +82,11 @@
             padding-left: 6px;
         }
     }
+
+    /****************************** help.html ******************************/
+    
+    .container-ayuda{
+        @include height(42rem);
+        flex-direction: column;
+    }
 }

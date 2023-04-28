@@ -124,5 +124,17 @@
         @include width(16rem);
         @include height(20rem);
     }
+
+    /****************************** help.html ******************************/
+    
+    .container-ayuda{
+        @include height(44rem);
+    }
+
+    .informacion-ayuda div:nth-child(2){
+        h2{
+            font-size: 22px;
+        }
+    }
 }
 

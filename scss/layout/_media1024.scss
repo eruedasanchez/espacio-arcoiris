@@ -148,6 +148,13 @@
             @include height(450px);
         }
     }
+
+    /****************************** help.html ******************************/
+
+    .container-ayuda{
+        @include height(34rem);
+    }
+    
 }
 
 

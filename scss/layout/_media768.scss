@@ -232,4 +232,10 @@
     .text-login p, .text-login h2{
         text-align: center;
     }
+
+    /****************************** help.html ******************************/
+
+    .container-ayuda{
+        @include height(32rem);
+    }
 }

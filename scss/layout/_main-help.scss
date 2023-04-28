@@ -1,0 +1,69 @@
+/****************************** login.html ******************************/
+
+.container-login-title{
+    @extend .container-taller-title;
+}
+
+.container-ayuda{
+    display: flex;
+    @include height(38rem);
+    @include width(90%);
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.lista-ayuda{
+    flex: 0 0 calc(30%);
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    li{
+        list-style: none;
+        margin-bottom: 0.6rem;
+        a{
+            @include textStyle(18px, $color-subtitles, none, none);
+            text-decoration: none;
+            &:hover{
+                color: $color-titles !important;         
+            }
+        }
+    }
+}
+
+.informacion-ayuda{
+    margin-top: 1.5rem;
+}
+
+.informacion-ayuda div:first-child{
+    img{
+        @include height(100%);
+        @include width(100%);
+    }
+}
+
+.informacion-ayuda div:nth-child(2){
+    h2{
+        @include textStyle(22px, $color-titles, none, none);
+        margin-top: 1rem;
+    }
+    p{
+        color: $color-subtitles;
+        a{
+            color: $color-titles;
+        }
+    }
+}
+
+.informacion-ayuda div:nth-child(3){
+    a{
+        text-decoration: none;
+        img{
+            @include height(24px);
+            @include width(24px);
+        }
+        span{
+            color: $color-titles;
+            padding-left: 0.4rem;
+        }
+    }
+}
+
