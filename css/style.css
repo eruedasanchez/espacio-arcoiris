@@ -498,10 +498,10 @@ footer {
 
 .container-dir {
   height: 8rem; }
-  .container-dir h3 {
+  .container-dir h2 {
     color: goldenrod; }
-  .container-dir h5 {
-    font-size: 1.25rem;
+  .container-dir p {
+    font-size: 1.22rem;
     color: grey;
     text-align: left;
     font-weight: inherit; }
@@ -533,11 +533,12 @@ footer {
   margin-top: 1.5rem; }
   .container-maps div:nth-child(2) a {
     color: goldenrod; }
-  .container-maps div:nth-child(2) h5 {
-    font-size: 1.25rem;
+  .container-maps div:nth-child(2) p {
+    font-size: 1.18rem;
     color: grey;
     text-align: left;
-    font-weight: inherit; }
+    font-weight: inherit;
+    margin-bottom: 0.35rem; }
 
 .whatsapp-ventas {
   font-size: 1.2rem;

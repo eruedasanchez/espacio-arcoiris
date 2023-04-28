@@ -9,11 +9,11 @@
 
 .container-dir{
     @include height(8rem);
-    h3{
+    h2{
         color: $color-titles;
     }
-    h5{
-        @include textStyle(1.25rem, $color-subtitles, left, inherit);
+    p{
+        @include textStyle(1.22rem, $color-subtitles, left, inherit);
     }
 }
 
@@ -40,8 +40,9 @@
     a{
         color: $color-titles;
     }
-    h5{
-        @include textStyle(1.25rem, $color-subtitles, left, inherit);
+    p{
+        @include textStyle(1.18rem, $color-subtitles, left, inherit);
+        margin-bottom: 0.35rem;
     }
 }
 
