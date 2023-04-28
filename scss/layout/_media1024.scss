@@ -13,7 +13,7 @@
         @include height(10rem); 
         @include gridLimitElements(1, 2, 1, 5);
         order: 1;     
-        h2{
+        h3{
             @include textStyle(1.8rem, $color-titles, left, none);
             @include gridLimitElements(1, 2, 1, 2);
         }
@@ -23,7 +23,7 @@
         @include height(10rem);
         @include gridLimitElements(2, 3, 1, 5);
         order: 2;
-        h2{
+        h3{
             @include textStyle(1.8rem, $color-titles, left, none);
             @include gridLimitElements(2, 3, 1, 2);
         }
@@ -48,7 +48,7 @@
         @include height(10rem);
         @include gridLimitElements(3, 4, 1, 5);
         order: 3;  
-        h2{
+        h3{
             @include textStyle(1.8rem, $color-titles, left, none);
             @include gridLimitElements(3, 4, 1, 2);
         }                       
@@ -58,7 +58,7 @@
         @include height(10rem);
         @include gridLimitElements(4, 5, 1, 5);
         order: 4; 
-        h2{
+        h3{
             @include textStyle(1.8rem, $color-titles, left, none);
             @include gridLimitElements(4, 5, 1, 2);
         }

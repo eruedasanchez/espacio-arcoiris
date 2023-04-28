@@ -96,7 +96,7 @@ footer {
   grid-row-start: 1;
   grid-row-end: 5;
   order: 1; }
-  .container-information div:first-child h2 {
+  .container-information div:first-child h3 {
     font-size: 1.8rem;
     color: goldenrod;
     text-align: left;
@@ -105,6 +105,9 @@ footer {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2; }
+  .container-information div:first-child p {
+    font-size: 1rem;
+    margin-bottom: 0.3rem; }
 
 .container-information div:nth-child(2) {
   height: 10rem;
@@ -113,7 +116,7 @@ footer {
   grid-row-start: 1;
   grid-row-end: 5;
   order: 2; }
-  .container-information div:nth-child(2) h2 {
+  .container-information div:nth-child(2) h3 {
     font-size: 1.8rem;
     color: goldenrod;
     text-align: left;
@@ -144,7 +147,7 @@ footer {
   grid-row-start: 1;
   grid-row-end: 5;
   order: 3; }
-  .footer-information h2 {
+  .footer-information h3 {
     font-size: 1.8rem;
     color: goldenrod;
     text-align: left;
@@ -153,6 +156,9 @@ footer {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2; }
+  .footer-information p {
+    font-size: 1rem;
+    margin-bottom: 0.3rem; }
 
 .container-information div:nth-child(4) {
   height: 10rem;
@@ -161,7 +167,7 @@ footer {
   grid-row-start: 1;
   grid-row-end: 5;
   order: 4; }
-  .container-information div:nth-child(4) h2 {
+  .container-information div:nth-child(4) h3 {
     font-size: 1.8rem;
     color: goldenrod;
     text-align: left;
@@ -187,11 +193,12 @@ footer {
   gap: none;
   column-gap: none;
   row-gap: none; }
-  .copyright h6 {
+  .copyright p {
     font-size: 1rem;
     color: white;
     text-align: center;
-    font-weight: none; }
+    font-weight: none;
+    padding-top: 0.35rem; }
 
 /****************************** index.html ******************************/
 .container-main-subtitle {
@@ -950,7 +957,7 @@ label {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 1; }
-    .container-information div:first-child h2 {
+    .container-information div:first-child h3 {
       font-size: 1.8rem;
       color: goldenrod;
       text-align: left;
@@ -966,7 +973,7 @@ label {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 2; }
-    .container-information div:nth-child(2) h2 {
+    .container-information div:nth-child(2) h3 {
       font-size: 1.8rem;
       color: goldenrod;
       text-align: left;
@@ -993,7 +1000,7 @@ label {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 3; }
-    .footer-information h2 {
+    .footer-information h3 {
       font-size: 1.8rem;
       color: goldenrod;
       text-align: left;
@@ -1009,7 +1016,7 @@ label {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 4; }
-    .container-information div:nth-child(4) h2 {
+    .container-information div:nth-child(4) h3 {
       font-size: 1.8rem;
       color: goldenrod;
       text-align: left;
@@ -1109,22 +1116,22 @@ label {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 1; }
-    .container-information div:first-child h2 {
+    .container-information div:first-child h3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 2; }
-    .container-information div:first-child h6:first-child {
+    .container-information div:first-child p:first-child {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 3; }
-    .container-information div:first-child h6:nth-child(2) {
+    .container-information div:first-child p:nth-child(2) {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 3;
       grid-row-end: 4; }
-    .container-information div:first-child h6:nth-child(3) {
+    .container-information div:first-child p:nth-child(3) {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 4;
@@ -1135,7 +1142,7 @@ label {
     grid-row-start: 1;
     grid-row-end: 5;
     order: 2; }
-    .container-information div:nth-child(2) h2 {
+    .container-information div:nth-child(2) h3 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
@@ -1146,22 +1153,22 @@ label {
     grid-row-start: 5;
     grid-row-end: 9;
     order: 3; }
-    .footer-information h2 {
+    .footer-information h3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 5;
       grid-row-end: 6; }
-  .footer-information h6:first-child {
+  .footer-information p:first-child {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 6;
     grid-row-end: 7; }
-  .footer-information h6:nth-child(2) {
+  .footer-information p:nth-child(2) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 7;
     grid-row-end: 8; }
-  .footer-information h6:nth-child(3) {
+  .footer-information p:nth-child(3) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 8;
@@ -1172,7 +1179,7 @@ label {
     grid-row-start: 5;
     grid-row-end: 9;
     order: 4; }
-    .container-information div:nth-child(4) h2 {
+    .container-information div:nth-child(4) h3 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 5;
@@ -1299,9 +1306,9 @@ label {
     align-items: none;
     grid-template-columns: 19rem;
     grid-template-rows: 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem) 5rem repeat(3, 2rem); }
-  .container-information div:first-child h2 {
+  .container-information div:first-child h3 {
     text-align: center; }
-  .container-information div:first-child h6:first-child, .container-information div:first-child h6:nth-child(2), .container-information div:first-child h6:nth-child(3), .container-information div:first-child h6:nth-child(4) {
+  .container-information div:first-child p:first-child, .container-information div:first-child p:nth-child(2), .container-information div:first-child p:nth-child(3), .container-information div:first-child p:nth-child(4) {
     text-align: center; }
   .container-information div:nth-child(2) {
     grid-column-start: 1;
@@ -1309,7 +1316,7 @@ label {
     grid-row-start: 5;
     grid-row-end: 9;
     order: 2; }
-    .container-information div:nth-child(2) h2 {
+    .container-information div:nth-child(2) h3 {
       text-align: center;
       grid-column-start: 1;
       grid-column-end: 2;
@@ -1329,31 +1336,31 @@ label {
     grid-row-start: 9;
     grid-row-end: 13;
     order: 3; }
-    .footer-information h2 {
+    .footer-information h3 {
       text-align: center;
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 9;
       grid-row-end: 10; }
-  .footer-information h6:first-child {
+  .footer-information p:first-child {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 10;
     grid-row-end: 11; }
-  .footer-information h6:nth-child(2) {
+  .footer-information p:nth-child(2) {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 11;
     grid-row-end: 12; }
-  .footer-information h6:nth-child(3) {
+  .footer-information p:nth-child(3) {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 12;
     grid-row-end: 13; }
-  .footer-information h6:nth-child(4) {
+  .footer-information p:nth-child(4) {
     text-align: center; }
   .container-information div:nth-child(4) {
     grid-column-start: 1;
@@ -1361,7 +1368,7 @@ label {
     grid-row-start: 13;
     grid-row-end: 17;
     order: 4; }
-    .container-information div:nth-child(4) h2 {
+    .container-information div:nth-child(4) h3 {
       text-align: center;
       grid-column-start: 1;
       grid-column-end: 2;
@@ -1667,6 +1674,9 @@ label {
 
 @media (max-width: 374px) {
   /* 320px a 374px (Mobile S) */
+  /****************************** footer.html ******************************/
+  .copyright p {
+    font-size: 0.9rem; }
   /****************************** index.html ******************************/
   .container-main-subtitle {
     grid-template-rows: 5rem 10rem 3rem 7rem 4.5rem 11rem;

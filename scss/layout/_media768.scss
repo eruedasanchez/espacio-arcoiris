@@ -34,16 +34,16 @@
     .container-information div:first-child{
         @include gridLimitElements(1, 2, 1, 5);
         order: 1;     
-        h2{
+        h3{
             @include gridLimitElements(1, 2, 1, 2);
         }
-        h6:first-child{
+        p:first-child{
             @include gridLimitElements(1, 2, 2, 3);  
         }
-        h6:nth-child(2){
+        p:nth-child(2){
             @include gridLimitElements(1, 2, 3, 4);  
         }
-        h6:nth-child(3){
+        p:nth-child(3){
             @include gridLimitElements(1, 2, 4, 5);  
         }
     }
@@ -51,7 +51,7 @@
     .container-information div:nth-child(2){
         @include gridLimitElements(2, 3, 1, 5);
         order: 2;
-        h2{
+        h3{
             @include gridLimitElements(2, 3, 1, 2);
         }
     }
@@ -59,27 +59,27 @@
     .footer-information{
         @include gridLimitElements(1, 2, 5, 9);
         order: 3;  
-        h2{
+        h3{
             @include gridLimitElements(1, 2, 5, 6);
         }                       
     }
 
-    .footer-information h6:first-child{
+    .footer-information p:first-child{
         @include gridLimitElements(1, 2, 6, 7);
     }
 
-    .footer-information h6:nth-child(2){
+    .footer-information p:nth-child(2){
         @include gridLimitElements(1, 2, 7, 8);
     }
 
-    .footer-information h6:nth-child(3){
+    .footer-information p:nth-child(3){
         @include gridLimitElements(1, 2, 8, 9);
     }
     
     .container-information div:nth-child(4){
         @include gridLimitElements(2, 3, 5, 9);
         order: 4; 
-        h2{
+        h3{
             @include gridLimitElements(2, 3, 5, 6);
         }
     }
