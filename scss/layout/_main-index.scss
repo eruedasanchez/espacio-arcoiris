@@ -2,7 +2,7 @@
 
 .container-main-subtitle{
     margin-top: 6rem;
-    @include grid(center, none, 32rem 36rem, 4rem 6rem 4rem 5rem 4rem 6rem);
+    @include grid(center, none, 32rem 36rem, 3.2rem 6.2rem 3rem 5.8rem 3.2rem 8rem);
     grid-template-areas: 
     "imagen fst-title"
     "imagen fst-subtitle"
@@ -21,7 +21,7 @@
 
 .container-main-subtitle div:nth-child(2){
     @include gridArea(fst-subtitle);
-    h3{
+    p{
         @include textStyle(1.2rem, $color-subtitles, none, inherit);
         padding-left: 0.8rem;
     }
@@ -36,7 +36,7 @@
 
 .container-main-subtitle div:nth-child(4){
     @include gridArea(snd-subtitle);
-    h3{
+    p{
         @include textStyle(1.2rem, $color-subtitles, none, inherit);
         padding-left: 0.8rem;
     }
@@ -51,7 +51,7 @@
 
 .container-main-subtitle div:nth-child(6){
     @include gridArea(thr-subtitle);
-    h3{
+    p{
         @include textStyle(1.2rem, $color-subtitles, none, inherit);
         padding-left: 0.8rem;
     }
@@ -62,7 +62,7 @@
     img{
         @include width(26rem);
         @include height(26rem);
-        border-radius: 100%;
+        /* border-radius: 5%; */
         border-left: 0.5rem;
     }
 }
@@ -72,6 +72,41 @@
     @include flex(row, none, center, none, 0, 5.5rem, 0);
     list-style: $lists-style;
     margin-top: 3.2rem;
+}
+
+.sponsors li:first-child{
+    a img{
+        width: 140px;
+        height: 52px;
+    }
+}
+
+.sponsors li:nth-child(2){
+    a img{
+        width: 140px;
+        height: 40px;
+    }
+}
+
+.sponsors li:nth-child(3){
+    a img{
+        width: 140px;
+        height: 52px;
+    }
+}
+
+.sponsors li:nth-child(4){
+    a img{
+        width: 75px;
+        height: 70px;
+    }
+}
+
+.sponsors li:nth-child(5){
+    a img{
+        width: 120px;
+        height: 60px;
+    }
 }
 
 .cursos-elegidos{
@@ -132,16 +167,25 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://i.postimg.cc/Px4s3wGt/exclusive.jpg"); 
     @include backgroundStyle(center, cover, no-repeat);
     div{
-        h5{
-            color: $color-titles;
-        }
-        h3, h6{
+        h3{
             color: $color-white;
-        }
-        h4{
-            color: $color-gold;
+            font-size: 2.2rem;
         }
     }
 }
 
+.exclusive div p:first-child{
+    color: $color-gold;
+    font-size: 1.3rem;
+}
+
+.exclusive div p:nth-child(2){
+    color: $color-titles;
+    font-size: 1.3rem;
+}
+
+.exclusive div p:nth-child(3){
+    font-size: 1.1rem;
+    color: $color-white;
+}
 
