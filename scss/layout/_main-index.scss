@@ -62,7 +62,7 @@
     img{
         @include width(26rem);
         @include height(26rem);
-        /* border-radius: 5%; */
+        border-radius: 5%; 
         border-left: 0.5rem;
     }
 }

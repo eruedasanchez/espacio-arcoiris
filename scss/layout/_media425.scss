@@ -88,9 +88,9 @@
     /****************************** index.html ******************************/
 
     .container-main-subtitle{
-        @include height(57rem);
+        @include height(63rem);
         margin-top: 3rem;
-        @include grid(center, none, 24rem, 3rem 8rem 3rem 6rem 3rem 10rem);
+        @include grid(center, none, 22rem, 4.2rem 10rem 2.6rem 8.5rem 4.6rem 10rem);
         grid-template-areas: 
             "fst-title"
             "fst-subtitle"
@@ -133,7 +133,7 @@
         list-style: $lists-style;
         @include grid(center, center, repeat(2,10rem), repeat(3,5.5rem));
         column-gap: 1.1rem;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         padding-left: 3rem;
     }
 

@@ -14,8 +14,31 @@
     /****************************** index.html ******************************/
     
     .container-main-subtitle{
-        grid-template-rows: 3rem 8rem 3rem 7rem 5rem 9rem; 
+        @include height(60rem);
+    }
+
+    .container-main-subtitle{
+        grid-template-rows: 3rem 9.8rem 2.8rem 8rem 3.2rem 10rem; 
         grid-template-columns: 22rem;
+        margin-left: 0.2rem; 
+    }
+
+    .container-main-subtitle div:first-child{
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .container-main-subtitle div:nth-child(3){
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .container-main-subtitle div:nth-child(5){
+        h2{
+            font-size: 1.5rem;
+        }
     }
 
     .container-main-subtitle div:nth-child(7){

@@ -11,7 +11,8 @@
     /****************************** index.html ******************************/
     
     .container-main-subtitle{
-        grid-template-rows: 5rem 10rem 3rem 7rem 4.5rem 11rem; 
+        @include height(65rem);
+        grid-template-rows: 4rem 12rem 2.5rem 10rem 4rem 13rem; 
         grid-template-columns: 18rem;
     }
     
