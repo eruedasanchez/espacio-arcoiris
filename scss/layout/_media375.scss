@@ -90,6 +90,10 @@
 
     /****************************** capacitaciones-presenciales.html, herramientas.html e insumos.html ******************************/
     
+    .container-cap-presencial-title h1{
+        font-size: 1rem;
+    }
+    
     .container-cards-tienda{
         @include width(300px);
     }
